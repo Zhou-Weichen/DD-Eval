@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DATA_PATH='/media/gpu-server-1/4TB_for_data/Zhou/DD/mtt-distillation/dataset/tiny'
-LOAD_PATH='/media/gpu-server-1/4TB_for_data/Zhou/DD/mtt-distillation/downloads/tiny_50'
+DATA_PATH='./DD/mtt-distillation/dataset/tiny'
+LOAD_PATH='./DD/mtt-distillation/downloads/tiny_50'
 DATASET='Tiny' # CIFAR10 / CIFAR100 / ImageNet / Tiny
 SUBSET='imagenette' # only for DATASET='ImageNet'
 EVAL_MODE='4'
