@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" width="120" />
+  <img src="./assert/logo.png" width="120" />
 </p>
 
 # DD-Eval: Dataset Distillation Independent Evaluation Hub
