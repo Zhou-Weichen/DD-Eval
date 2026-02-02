@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/fluency/96/audit.png" width="100" />
+  <img src="./logo.png" width="120" />
 </p>
 
 # DD-Eval: Dataset Distillation Independent Evaluation Hub
