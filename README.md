@@ -14,11 +14,14 @@ We bridge the gap between reported paper claims and real-world reproducibility b
 
 ## 🛠️ Our Methodology
 
-To ensure the highest level of fidelity to the original research, `DD-Eval` follows a strict **"Decouple & Verify"** protocol:
+To ensure maximum fidelity to original research while maintaining independent oversight, `DD-Eval` operates under a two-phase protocol:
 
-1. **Code Separation**: We isolate the **original evaluation subroutines** from the complex distillation frameworks of the source repositories.
-2. **Original Logic Preservation**: We use the original author's validation code (refined for readability) to ensure model training, data augmentation, and preprocessing exactly match the paper's intended environment.
-3. **Tensor-First**: We prioritize the use of **officially released synthetic tensors**. Where official tensors are unavailable, we provide results from our own distillation runs using the original hyper-parameters.
+### Phase I: Implementation Fidelity (Current)
+* **Code Isolation**: We extract and decouple the **original evaluation subroutines** from source repositories to eliminate framework-level side effects.
+* **Data Sourcing**: We prioritize official synthetic tensors. Where unavailable, we re-distill datasets using official training pipelines and host the resulting tensors on [**Hugging Face Datasets**](https://github.com/Zhou-Weichen/DD-Eval) for transparency.
+* **Logic Integrity**: By using scripts derived directly from source code, we ensure reported metrics reflect the authors' intended logic, free from external pipeline interference.
+### Phase II: Unified Benchmarking (Upcoming)
+* **Standardization**: All verified datasets will be subjected to a **unified evaluation platform** featuring standardized architectures, fixed training loops, and synchronized seeds to facilitate objective head-to-head comparisons.
 
 ---
 
