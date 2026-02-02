@@ -22,13 +22,14 @@ To ensure the highest level of fidelity to the original research, `DD-Eval` foll
 
 We focus on whether the results are **consistent** with paper claims rather than chasing precise decimals. Minor performance gaps (±1-3%) are expected due to hardware and environmental variance.
 
-| Method | Venue | Verification Status | Reproduction Quality | Data Source |
-| :--- | :--- | :--- | :--- | :---: |
+| Method | Venue | Verification | Quality | Data Source |
+| :--- | :--- | :---: | :---: | :---: |
 | **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ Verified | 🟢 | [✔️](https://github.com/GeorgeCazenavette/mtt-distillation#getting-the-data) |
 | **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | 🕒 Ongoing | 🟡 Evaluating | Official Subroutines |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
 | **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | 📅 Backlog | TBD | TBD |
 
-> **Quality Legend:** > 🟢 **Consistent**: Results are within a reasonable margin of the reported performance.  
+> **Quality Legend:** >
+> 🟢 **Consistent**: Results are within a reasonable margin of the reported performance.  
 > 🟡 **Evaluating**: Initial tests running; benchmarks pending.  
 > 🔴 **Significant Gap**: Reproduced results differ substantially from claims.
 
