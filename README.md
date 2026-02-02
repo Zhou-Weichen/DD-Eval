@@ -22,9 +22,9 @@ To ensure the highest level of fidelity to the original research, `DD-Eval` foll
 
 We focus on whether the results are **consistent** with paper claims rather than chasing precise decimals. Minor performance gaps (±1-3%) are expected due to hardware and environmental variance.
 
-| Method | Venue | Verification Status | Reproduction Quality | Code Source | Data Source |
+| Method | Venue | Verification Status | Reproduction Quality | Data Source |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **MTT** | CVPR '22 | ✅ Verified | 🟢 Consistent (Matches paper trend) | Isolated `utils.py` | Official `.pt` |
+| **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ Verified | 🟢 Consistent (Matches paper trend) | [✔️](https://github.com/GeorgeCazenavette/mtt-distillation#getting-the-data) |
 | **TDCA** | CVPR '23 | 🕒 Ongoing | 🟡 Evaluating | Official Subroutines | Official `.pt` |
 | **FTD** | NeurIPS '23 | 📅 Backlog | - | TBD | TBD |
 
