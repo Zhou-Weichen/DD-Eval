@@ -46,8 +46,9 @@ We focus on whether the results are **consistent** with paper claims rather than
 ```bash
 conda create -n ddeval python=3.9
 pip install torch torchvision numpy tqdm
+```
 
-
+---
 
 ## ⚖️ Disclaimer & Attribution
 
