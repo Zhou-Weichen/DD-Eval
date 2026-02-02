@@ -28,7 +28,7 @@ We focus on whether the results are **consistent** with paper claims rather than
 | **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | 🕒 Ongoing | 🟡 Evaluating | Official Subroutines |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
 | **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | 📅 Backlog | TBD | TBD |
 
-> **Quality Legend:** >
+> **Quality Legend:** 
 > 🟢 **Consistent**: Results are within a reasonable margin of the reported performance.  
 > 🟡 **Evaluating**: Initial tests running; benchmarks pending.  
 > 🔴 **Significant Gap**: Reproduced results differ substantially from claims.
