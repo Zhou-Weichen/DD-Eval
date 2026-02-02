@@ -26,7 +26,7 @@ We focus on whether the results are **consistent** with paper claims rather than
 | :--- | :--- | :---: | :---: | :---: |
 | **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ | 🟢 | [✔️](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors) |
 | **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | 🕒 | 🟡 | Official Subroutines |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
-| **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | 📅 | TBD | TBD |
+| **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | 📅 |  - | - |
 
 ***Verification Status***
 > ✅ **Verified**: Independent audit completed.  
