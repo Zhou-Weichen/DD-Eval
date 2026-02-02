@@ -28,7 +28,7 @@ We focus on whether the results are **consistent** with paper claims rather than
 
 | Method | Venue | Verification | Quality | Resources | Data Source |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ | 🟢 | [📂 `scripts/mtt/`](./scripts/mtt/) | [✔️](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors) |
+| **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ | 🟢 | [`scripts/mtt/`](./scripts/mtt/) | [✔️](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors) |
 | **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | 🕒 | 🟡 | - |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
 | **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | 📅 |  - | - | - |
 
