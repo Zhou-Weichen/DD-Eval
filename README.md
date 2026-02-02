@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://img.icons8.com/fluency/96/audit.png" width="100" />
+</p>
+
 # DD-Eval: Dataset Distillation Independent Evaluation Hub
 
 > **"Trust paper results, but verify with tensors."**
