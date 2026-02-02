@@ -23,7 +23,7 @@ To ensure the highest level of fidelity to the original research, `DD-Eval` foll
 We focus on whether the results are **consistent** with paper claims rather than chasing precise decimals. Minor performance gaps (±1-3%) are expected due to hardware and environmental variance.
 
 | Method | Venue | Verification | Quality | Data Source |
-| :--- | :--- | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: |
 | **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ | 🟢 | [✔️](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors) |
 | **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | 🕒 | 🟡 |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
 | **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | 📅 |  - | - |
