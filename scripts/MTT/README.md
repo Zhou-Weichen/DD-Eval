@@ -1,6 +1,6 @@
-# 🔬 MTT Evaluation Report (Independent Audit)
+# 🔬 MTT Evaluation Report 
 
-This directory documents the **reproduction results** for the **MTT** method. (CVPR 2022).
+### This directory documents the **reproduction results** for the **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** method. (CVPR 2022).
 
 ## 🚀 Getting Started
 If you have an RTX 30XX GPU (or newer), run
@@ -27,7 +27,8 @@ python download_tiny.py
 ```
 
 2. Pre-distilled Data
+
 If you wish to evaluate pre-distilled synthetic images directly without running the full MTT distillation process:
-- Download the distilled data from the Official Release Link
+- Download the distilled data from the Official Release [Link](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors)
 
 ---
