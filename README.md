@@ -6,7 +6,7 @@
 
 > **"Trust paper results, but verify with tensors."**
 
-`DD-Eval` is an independent auditing suite for **Dataset Distillation (DD)** research. In a field where distillation pipelines are often computationally heavy and environment-sensitive, this repository serves as a third-party "Sanity Check." 
+`DD-Eval` is an independent reproducibility benchmarking suite for **Dataset Distillation (DD)** research. In a field where distillation pipelines are often computationally heavy and environment-sensitive, this repository serves as a third-party verification baseline to ensure scientific integrity.
 
 We bridge the gap between reported paper claims and real-world reproducibility by providing a clean, decoupled environment for verifying synthetic data.
 
@@ -36,7 +36,7 @@ We focus on whether the results are **consistent** with paper claims rather than
 | **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | 📅 |  - | - | - |
 
 ***Verification Status***
-> ✅ **Verified**: Independent audit completed.  
+> ✅ **Verified**: Independent reproduction verified.  
 > 🕒 **Ongoing**: Currently being decoupled or benchmarked.  
 > 📅 **Backlog**: Planned for future verification.
 
