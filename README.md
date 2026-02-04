@@ -72,6 +72,6 @@ To better understand the landscape of Dataset Distillation (DD), we highly recom
 
 * [**Awesome-Dataset-Distillation**](https://github.com/Guang000/Awesome-Dataset-Distillation): A curated list of dataset distillation papers, code, and resources. It is an essential roadmap for anyone navigating this rapidly evolving domain.
 
-* **[DD-Ranking (CVPR 2025*)](https://github.com/NUS-HPC-AI-Lab/DD-Ranking)**: 
+* **[DD-Ranking](https://github.com/NUS-HPC-AI-Lab/DD-Ranking)**: 
 ---
 
