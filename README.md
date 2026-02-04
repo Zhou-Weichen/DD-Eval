@@ -63,3 +63,14 @@ pip install torch torchvision numpy tqdm
 * **Reference Only**: This project is intended for **benchmarking and independent research reference**. Results provided here are community-driven sanity checks and should not be considered official implementation results.
 * **Accuracy & Feedback**: We strive for absolute accuracy. If you identify any errors or believe a **🔴 Significant Gap** status (documented in [`audits/`](./audits/)) results from a misunderstanding of the original method, please **open an issue or [contact us](mailto:zweic008@gmail.com)**. We actively welcome technical clarification to ensure the integrity of this hub.
 * **The Gold Standard**: For official results, hyperparameter tuning details, or the full distillation pipeline, **always refer to the original author's repository.** Links to official sources are provided in the verification table above.
+
+---
+
+## 🔗 Related Resources
+
+To better understand the landscape of Dataset Distillation (DD), we highly recommend the following curated collection. While **DD-Eval** focuses on reproduction and verification, this resource provides a comprehensive overview of the field's progression:
+
+* [**Awesome-Dataset-Distillation**](https://github.com/Guang000/Awesome-Dataset-Distillation): A curated list of dataset distillation papers, code, and resources. It is an essential roadmap for anyone navigating this rapidly evolving domain.
+
+---
+
