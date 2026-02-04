@@ -49,10 +49,28 @@ We focus on whether the results are **consistent** with paper claims rather than
 
 ## 🚀 Quick Start
 
-### 1. Requirements
+### 1. General Setup
 ```bash
-conda create -n ddeval python=3.9
-pip install torch torchvision numpy tqdm
+# Clone the repository
+git clone https://github.com/Zhou-Weichen/DD-Eval.git
+cd DD-Eval
+```
+
+### 2. Reproduce a Specific Method
+Verification is handled on a per-method basis. Each directory contains its own dedicated instructions and scripts.
+
+General Workflow:
+
+*1. Select:   Find the method you wish to verify from the status table above.*
+
+*2. Navigate: cd scripts/Method_Name/*
+
+*3. Execute:  Read the local README.md and run the provided scripts.*
+
+```bash
+# Example: To verify the MTT algorithm
+cd scripts/MTT/
+# Follow the instructions in scripts/MTT/README.md
 ```
 
 ---
