@@ -85,8 +85,8 @@ bash eval.sh
 | **CIFAR-10** | 1 | ConvNetD3 | `3` | ~46.0% | 
 | **CIFAR-10** | 10 | ConvNetD3 | `3` | ~63.1% |
 | **CIFAR-10** | 50 | ConvNetD3 | `3` | ~69.6% |
-| **CIFAR-100** | 1 | ConvNetD3 | `3` | ~23.40% |
-| **CIFAR-100** | 10 | ConvNetD3 | `3` | ~38.10% |
+| **CIFAR-100** | 1 | ConvNetD3 | `3` | ~23.4% |
+| **CIFAR-100** | 10 | ConvNetD3 | `3` | ~38.1% |
 | **CIFAR-100** | 50 | ConvNetD3 | `3` | ~46.7% |
 | **Tiny-ImageNet** | 1 | ConvNetD4 | `4` | ~8.9% | 
 | **Tiny-ImageNet** | 10 | ConvNetD4 | `4` | ~20.3% | 
