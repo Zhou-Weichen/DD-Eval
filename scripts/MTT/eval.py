@@ -16,7 +16,7 @@ def main(args):
     channel, im_size, num_classes, class_names, mean, std, _, _, testloader, \
     _, _, _ = get_dataset(args.dataset, args.data_path, args.batch_real, args.subset, args=args)
 
-    # 2.synthetic data from **https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors **
+    # synthetic data from **https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors **
     print(f"Loading synthetic data from {args.load_path}")
     image_syn = torch.load(f"{args.load_path}/images_best.pt").to(args.device)
     label_syn = torch.load(f"{args.load_path}/labels_best.pt").to(args.device)
@@ -26,7 +26,7 @@ def main(args):
 
     print(f"Synthetic Data Shape: {image_syn.shape}")
 
-    # 3. evaluate
+    # evaluate
     model_eval_pool = get_eval_pool(args.eval_mode, args.model, args.model)
     
     results = {}
