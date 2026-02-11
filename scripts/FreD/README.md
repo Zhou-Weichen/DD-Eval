@@ -61,7 +61,7 @@ Before execution, open [eval.sh](./eval.sh) and verify the following core argume
 | **`LOAD_PATH`** | Path to distilled `.pt` files. | e.g., `./download/tiny` |
 | **`DATASET`** | Target dataset name. | `CIFAR10`, `CIFAR100`, or `Tiny`. |
 
----
+
 
 #### 🔍 EVAL_MODE Detailed Mapping
 
@@ -69,6 +69,8 @@ Before execution, open [eval.sh](./eval.sh) and verify the following core argume
 ```bash
 bash eval.sh
 ```
+
+---
 
 ## 📊 4. My Reproduction Results
 
@@ -80,7 +82,7 @@ bash eval.sh
 | **CIFAR-100** | 1 | ~34.1% |
 |  | 10 | ~-% |
 |  | 50 | ~-% |
-| **Tiny-ImageNet** | 1 | ~-% | 
+| **Tiny-ImageNet** | 1 | ~14.48% | 
 |  | 10 | ~-% | 
 |  | 50 | ~-% | 
 
