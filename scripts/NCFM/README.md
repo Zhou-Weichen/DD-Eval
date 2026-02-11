@@ -72,8 +72,12 @@ torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 -
 ```
 
 > [!TIP]
-> Note 1: The first run may fail while downloading the validation dataset. Simply run the same command a second time, and it should execute successfully.
-> Note 2: Please modify '--nproc_per_node', '--nnodes', and '--gpu' according to your available hardware.
-> Note 3: Detailed experiment settings can be found in the corresponding configuration files under 'config/'.
+> **Note 1:** During the first execution, the validation dataset download may occasionally fail due to network instability. If this happens, simply rerun the same command and it should proceed normally.
+>
+> **Note 2:** Please adjust `--nproc_per_node`, `--nnodes`, and `--gpu` according to your available hardware and GPU configuration.
+>
+> **Note 3:** Detailed experimental settings and hyperparameters can be found in the corresponding configuration files under the [`config/`](https://github.com/gszfwsb/NCFM/tree/9e3e60b855fa918337013c8c3d460601690eb58e/config) directory.
+
 ---
+
 
