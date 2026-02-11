@@ -79,6 +79,19 @@ torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 -
 > **Note 3:** Detailed experimental settings and hyperparameters can be found in the corresponding configuration files under the [`config/`](https://github.com/gszfwsb/NCFM/tree/9e3e60b855fa918337013c8c3d460601690eb58e/config) directory.
 
 ---
+## 📊 4. My Reproduction Results
+
+| Dataset | IPC | My Result (%) | 
+| :--- | :---:| :---: |
+| **CIFAR-10** | 1  |~48.247% | 
+| **CIFAR-10** | 10 |~70.157% |
+| **CIFAR-10** | 50 | ~77.500% |
+| **CIFAR-100** | 1  | ~30.590% |
+| **CIFAR-100** | 10 | ~49.264% |
+| **CIFAR-100** | 50 | ~54.386% |
+| **Tiny-ImageNet** | 1  | ~12.968% | 
+| **Tiny-ImageNet** | 10 | ~24.327% | 
+| **Tiny-ImageNet** | 50 | ~26.991% | 
 
 
 
