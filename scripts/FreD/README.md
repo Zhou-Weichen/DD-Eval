@@ -6,6 +6,16 @@
 
 ```bash
 pip install -r requirements.txt
+
+# Create directory for test datasets
+# This folder stores CIFAR10, CIFAR100, TinyImageNet, etc.
+# CIFAR10 and CIFAR100 will be downloaded automatically.
+# TinyImageNet needs to be downloaded manually (see instructions below).
+mkdir data
+
+# Create directory for distilled datasets
+# All generated or downloaded distilled datasets will be stored here
+mkdir download
 ```
 ---
 
@@ -13,7 +23,7 @@ pip install -r requirements.txt
 
 #### 2.1 Tiny-ImageNet
 
-Use our script to download and restructure it:
+Use our [script](https://github.com/Zhou-Weichen/DD-Eval/blob/main/scripts/MTT/download_tiny.py]) to download and restructure it:
 
 ```bash
 python download_tiny.py
@@ -26,7 +36,8 @@ To evaluate official results without running the expensive distillation process:
 
 > [!TIP]
 > Note that distilled data for CIFAR‑100 and Tiny datasets are available only for IPC=1; no data are provided for IPC=10 or IPC=100.
-> 
+>
+
 ---
 ## 🧪 3. Reproduction & Evaluation
 
