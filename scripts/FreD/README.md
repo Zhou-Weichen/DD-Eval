@@ -11,7 +11,7 @@ pip install -r requirements.txt
 # This folder stores CIFAR10, CIFAR100, TinyImageNet, etc.
 # CIFAR10 and CIFAR100 will be downloaded automatically.
 # TinyImageNet needs to be downloaded manually (see instructions below).
-mkdir data
+mkdir dataset
 
 # Create directory for distilled datasets
 # All generated or downloaded distilled datasets will be stored here
@@ -29,6 +29,14 @@ Use our [script](https://github.com/Zhou-Weichen/DD-Eval/blob/main/scripts/MTT/d
 python download_tiny.py
 ```
 
+⚠️ Important:
+
+For validation data, **change the output path** from 
+
+`dataset/tiny/val/images` to `dataset/tiny/val/` to ensure compatibility with the data loading logic in [`utils.py`](https://github.com/Zhou-Weichen/DD-Eval/blob/main/scripts/FreD/utils.py)
+
+
+ 
 #### 2.2 Pre-distilled Data
 
 To evaluate official results without running the expensive distillation process:
@@ -46,11 +54,11 @@ We provide a unified script eval.sh to train models on distilled data and test t
 #### 3.1 Configure your Paths
 
 Before execution, open [eval.sh](./eval.sh) and verify the following core arguments:
-
+ 
 | Argument | Description | Recommendation / Details |
 | :--- | :--- | :--- |
-| **`DATA_PATH`** | Root directory for datasets. | CIFAR auto-downloads; Tiny-ImageNet requires manual prep (Step 2.1). |
-| **`LOAD_PATH`** | Path to distilled `.pt` files. | Path to [Official Tensors](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors). |
+| **`DATA_PATH`** | Root directory for datasets. | e.g., `./dataset/tiny` 
+| **`LOAD_PATH`** | Path to distilled `.pt` files. | e.g., `./download/tiny` |
 | **`DATASET`** | Target dataset name. | `CIFAR10`, `CIFAR100`, or `Tiny`. |
 
 ---
