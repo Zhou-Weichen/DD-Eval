@@ -1,0 +1,20 @@
+# CIFAR10
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=1 --config_path=../config/ipc1/cifar10.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/CIFAR-10/CIFAR10_ipc1.pt
+
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=10 --config_path=../config/ipc10/cifar10.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/CIFAR-10/CIFAR10_ipc10.pt
+
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 --config_path=../config/ipc50/cifar10.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/CIFAR-10/CIFAR10_ipc50.pt
+
+# CIFAR100
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=1 --config_path=../config/ipc1/cifar100.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/CIFAR-100/CIFAR100_ipc1.pt
+
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=10 --config_path=../config/ipc10/cifar100.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/CIFAR-100/CIFAR100_ipc10.pt
+
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 --config_path=../config/ipc50/cifar100.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/CIFAR-100/CIFAR100_ipc50.pt
+
+# TINY
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=1 --config_path=../config/ipc1/tinyimagenet.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/Tiny_ImageNet/TinyImageNet_ipc1.pt
+
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=10 --config_path=../config/ipc10/tinyimagenet.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/Tiny_ImageNet/TinyImageNet_ipc10.pt
+
+torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 --config_path=../config/ipc50/tinyimagenet.yaml --load_path=../download/NCFM/NCFM_distillation_dataset/Tiny_ImageNet/TinyImageNet_ipc50.pt
