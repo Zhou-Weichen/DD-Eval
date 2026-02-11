@@ -12,7 +12,7 @@ BATCH_TRAIN=256
 BATCH_REAL=256
 LR_TEACHER=0.01
 
-DATA_PATH='./data'
+DATA_PATH='./dataset'
 LOAD_PATH='./download/cifar100'  
 DSA='True'
 DSA_STRATEGY='color_crop_cutout_flip_scale_rotate'

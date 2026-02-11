@@ -53,8 +53,11 @@ Before execution, open [eval.sh](./eval.sh) and verify the following core argume
 | **`DATASET`** | Target dataset name. | `CIFAR10`, `CIFAR100`, or `Tiny`. |
 | **`EVAL_MODE`** | Model Evaluation Pool. | Controls which architectures will be used for testing (see table below). |
 
----
 
+#### 3.2 Run Evaluation
+```bash
+bash eval.sh
+```
 #### 🔍 EVAL_MODE Detailed Mapping
 `EVAL_MODE` determines the `model_eval_pool`. Use the following codes to select your evaluation strategy:
 
@@ -72,12 +75,7 @@ Before execution, open [eval.sh](./eval.sh) and verify the following core argume
 > [!TIP]
 > Please align your IPC and EVAL_MODE as follows [Link](https://user-images.githubusercontent.com/18726777/184226412-7bd0d577-225b-487c-8c9c-23f6462ca7d0.png)
 
-
-#### 3.2 Run Evaluation
-```bash
-bash eval.sh
-```
-
+---
 ## 📊 4. My Reproduction Results
 
 | Dataset | IPC | Evaluation Model | EVAL_MODE | My Result (%) | 
