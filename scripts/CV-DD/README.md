@@ -7,7 +7,7 @@
 
 To get started with CV-DD, follow the installation instructions below.
 
-#### 0. Clone the repo #### 
+#### 0. Clone the Repository #### 
 
 ```sh
 git clone https://github.com/Jiacheng8/CV-DD.git
