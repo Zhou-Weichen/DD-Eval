@@ -8,19 +8,19 @@
 
 To get started with NCFM, follow the installation instructions below.
 
-0. Clone the repo
+#### 0. Clone the repo #### 
 
 ```sh
 git clone https://github.com/gszfwsb/NCFM.git
 ```
 
-1. Install dependencies
+####  1. Install dependencies #### 
    
 ```sh
 pip install -r requirements.txt
 ```
 
-2. Download the condensed dataset from [huggingface](https://huggingface.co/maomaocun/NCFM)
+####  2. Download the condensed dataset from [huggingface](https://huggingface.co/maomaocun/NCFM) #### 
 
 ```bash
 cd NCFM
@@ -56,7 +56,7 @@ For validation data, **change the output path** from
 
 
 
-3. Evaluation
+####  3. Evaluation #### 
 
 All commands for running the evaluation are provided in the commands.txt file. 
 For convenience, it is recommended to copy this file into the `NCFM/` directory before execution.
@@ -79,5 +79,20 @@ torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 -
 > **Note 3:** Detailed experimental settings and hyperparameters can be found in the corresponding configuration files under the [`config/`](https://github.com/gszfwsb/NCFM/tree/9e3e60b855fa918337013c8c3d460601690eb58e/config) directory.
 
 ---
+## 📊 4. My Reproduction Results
+
+| Dataset | IPC | My Result (%) | 
+| :--- | :---:| :---: |
+| **CIFAR-10** | 1  |~48.247% | 
+|              | 10 |~70.157% |
+|               | 50 | ~77.500% |
+| **CIFAR-100** | 1  | ~30.590% |
+|               | 10 | ~49.264% |
+|               | 50 | ~54.386% |
+| **Tiny-ImageNet** | 1  | ~12.968% | 
+|               | 10 | ~24.327% | 
+|               | 50 | ~26.991% | 
+
+
 
 

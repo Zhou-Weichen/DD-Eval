@@ -33,7 +33,10 @@ We focus on whether the results are **consistent** with paper claims rather than
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ | 🟢 | [`scripts/mtt/`](./scripts/MTT/) | [✔️](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors) |
 | **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | ✅ | 🟢 | [`scripts/FreD/`](./scripts/FreD/) |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
-| **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | ✅ |  - | - | - |
+| **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | ✅ | 🟢 | [`scripts/NCFM/`](./scripts/NCFM/) |[✔️](https://huggingface.co/maomaocun/NCFM)|
+| **[CV-DD](https://github.com/jiacheng8/cv-dd)** | arXiv | 🕒 | 🟡 | [`scripts/CV-DD/`] |[✔️](https://drive.google.com/drive/folders/1DHFe43l-R0GZR9poAP5YjAFzhaBtUw2a)|
+| **[G_VBSM](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation)** | CVPR '24 | 🕒 | 🟡 | [`scripts/G_VBSM/`] |[✔️](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation?tab=readme-ov-file)|
+
 
 ***Verification Status***
 > ✅ **Verified**: Independent reproduction verified.  
