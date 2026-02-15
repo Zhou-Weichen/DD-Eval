@@ -19,8 +19,9 @@ git clone https://github.com/gszfwsb/NCFM.git
 ```sh
 pip install -r requirements.txt
 ```
-
-####  2. Download the condensed dataset from [huggingface](https://huggingface.co/maomaocun/NCFM) #### 
+---
+## 📦 2. Data Preparation
+####  1. Download the condensed dataset from [huggingface](https://huggingface.co/maomaocun/NCFM) #### 
 
 ```bash
 cd NCFM
@@ -40,7 +41,7 @@ cd ..
 mkdir dataset
 ```
 
-#### For Tiny-ImageNet
+#### 2. Prepare Tiny-ImageNet
 
 Use our [script](https://github.com/Zhou-Weichen/DD-Eval/blob/main/scripts/MTT/download_tiny.py]) to download and restructure it:
 
@@ -54,7 +55,7 @@ For validation data, **change the output path** from
 
 `dataset/tiny/val/images` to `dataset/tinyimagenet/val/` to ensure compatibility with the data loading logic in [`utils.py`](https://github.com/gszfwsb/NCFM/blob/9e3e60b855fa918337013c8c3d460601690eb58e/utils/utils.py)
 
-
+---
 
 ####  3. Evaluation #### 
 
@@ -92,6 +93,7 @@ torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 -
 | **Tiny-ImageNet** | 1  | ~12.968% | 
 |               | 10 | ~24.327% | 
 |               | 50 | ~26.991% | 
+
 
 
 
