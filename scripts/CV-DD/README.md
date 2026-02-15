@@ -1,10 +1,43 @@
-## Prepare distilled dataset and generate soft labels
+# 🔬 NCFM Evaluation Report 
+
+### This directory documents the **reproduction results** for the **[CV-DD](https://github.com/Jiacheng8/CV-DD)** method.
+---
+
+## 🛠️ Getting Started
+
+To get started with CV-DD, follow the installation instructions below.
+
+#### 0. Clone the repo #### 
+
+```sh
+git clone https://github.com/Jiacheng8/CV-DD.git
+```
+
+#### 1. Environment Preparation #### 
+- Python >= 3.8
+- PyTorch >= 2.0.0
+- Torchvision >= 0.15.1
+
+#### 2. Overall Configuration #### 
+
+To ensure the functionality of the code, please kindly download some required materials from the [Google Drive Link](https://drive.google.com/drive/folders/1TQ8B2S8CGoMTt175a-wVN-iiLLzD3oz8?usp=drive_link) and store them in a specific folder. In this folder, we expect several sub-folders:
+
+- `patches/`
+- `offline_models/`
+- `test_data/`
+
+
+#### 3. Data Preparation #### 
 
 ```sh
 cd CV-DD
 mkdir CV_DD_data
 cd CV_DD_data
 # download distilled images from "https://drive.google.com/drive/folders/1DHFe43l-R0GZR9poAP5YjAFzhaBtUw2a"
+
+mv ./test_data/cifar100_test test_data/cifar100
+mv ./test_data/cifar10_test test_data/cifar10
+mv test_data/tiny_imagenet_test test_data/tiny_imagenet
 
 mv ./distilled\ data ./generated_data
 cd ./generated_data
@@ -17,7 +50,7 @@ mv ImageNet-1k/ syn_data/imagenet1k
 mv ImageNette/ syn_data/imagenet-nette
 ```
 
-Following format for storing the required data:
+We expect the following format for storing the required data:
 
 ```sh
 CV_DD_data/
@@ -49,9 +82,15 @@ CV_DD_data/
         └── tiny_imagenet /
 ```
 
-Generate soft labels:
+#### 4. Soft Label Generation #### 
 
-- NOTE : All 'relabel_voter_res18_ipc**x**.sh' should have 'mode=cvdd' changed to 'mode=voter'.
+> [!NOTE]
+> **Script Configuration Update**
+>
+> In all scripts matching the pattern `relabel_voter_res18_ipc{x}.sh`, the evaluation mode must be updated to ensure consistency with the current voter mechanism:
+>
+> * **Search:** `mode=cvdd`
+> * **Replace:** `mode=voter`
 
 ```sh
 # For example, for CIFAR-10 dataset in 1 IPC
@@ -79,11 +118,16 @@ bash relabel_voter_res18_ipc10.sh
 bash relabel_voter_res18_ipc50.sh
 ```
 
-Evaluate:
+#### 5. Evaluate ####  
 
-- Importly, add patch in 'train_fkd.py', paste follow code before 'def get_args():'
+> [!IMPORTANT]
+> **Critical Infrastructure Modification: Monkey Patch**
+>
+> To support the custom batch loading logic (FKD), you **must** apply a Monkey Patch to the PyTorch data utility in `train_fkd.py`. 
+>
+> * **Location:** This block MUST be pasted **before** `def get_args():` at the top level of the script to ensure the patch is active before the DataLoader is initialized.
 
-```sh
+```python
 ### Monkey Patch 
 import torch.utils.data._utils.fetch as torch_fetch
 
@@ -101,13 +145,30 @@ def fkd_custom_fetch(self, possibly_batched_index):
 torch_fetch._MapDatasetFetcher.fetch = fkd_custom_fetch
 ```
 
-- NOTE : All 'voter_ipc**1**_r**xx**.sh' should have 'mode=cvdd' changed to 'mode=voter'.
+> [!NOTE]
+> **Script Configuration Update**
+>
+> In all scripts matching the pattern `voter_ipc{x}_r{yy}.sh`, the evaluation mode must be updated to ensure consistency with the current voter mechanism:
+>
+> * **Search:** `mode=cvdd`
+> * **Replace:** `mode=voter`
 
 ```sh
 # For example, for CIFAR-10 dataset in 1 IPC
 cd ./CV-DD/validate/scripts/cifar10_experiment/
-bash voter_ipc1_r18.sh 
+bash voter_ipc1_r18.sh
 # Then, the results will be logged in "./CV-DD/validate/scripts/cifar10_experiment/logs"
-
 ```
+
+> [!NOTE]
+> **Metric Log Consistency**
+>
+> Please be aware of the difference between the **Console Output** and the **Logged Metrics** (e.g., in `metrics` dict or WandB):
+>
+> * **Console Log:** Displays **Error Rate** ($100 - \text{Accuracy}$) for intuitive monitoring of optimization progress.
+> * **Code Metrics:** The keys `train/Top1` and `train/Top5` store the **Raw Accuracy** ($\text{top1.avg}$).
+>
+> To convert the logged accuracy back to the displayed error rate, use: $\text{Error} = 100 - \text{Metric Value}$.
+
+
 
