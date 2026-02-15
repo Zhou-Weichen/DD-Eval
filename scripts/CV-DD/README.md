@@ -1,4 +1,4 @@
-# 🔬 NCFM Evaluation Report 
+# 🔬 CV-DD Evaluation Report 
 
 ### This directory documents the **reproduction results** for the **[CV-DD](https://github.com/Jiacheng8/CV-DD)** method.
 ---
@@ -27,7 +27,8 @@ To ensure the functionality of the code, please kindly download some required ma
 - `test_data/`
 
 
-#### 3. Data Preparation #### 
+---
+## 📦 2. Data Preparation
 
 ```sh
 cd CV-DD
@@ -37,7 +38,7 @@ cd CV_DD_data
 
 mv ./test_data/cifar100_test test_data/cifar100
 mv ./test_data/cifar10_test test_data/cifar10
-mv test_data/tiny_imagenet_test test_data/tiny_imagenet
+mv ./test_data/tiny_imagenet_test test_data/tiny_imagenet
 
 mv ./distilled\ data ./generated_data
 cd ./generated_data
@@ -46,8 +47,6 @@ mkdir syn_data
 mv CIFAR-10/ syn_data/cifar10/
 mv CIFAR-100/ syn_data/cifar100/
 mv Tiny-ImageNet/ syn_data/tiny_imagenet/
-mv ImageNet-1k/ syn_data/imagenet1k
-mv ImageNette/ syn_data/imagenet-nette
 ```
 
 We expect the following format for storing the required data:
@@ -82,7 +81,9 @@ CV_DD_data/
         └── tiny_imagenet /
 ```
 
-#### 4. Soft Label Generation #### 
+---
+## 🧪 3. Reproduction & Evaluation
+#### 1. Soft Label Generation #### 
 
 > [!NOTE]
 > **Script Configuration Update**
@@ -118,7 +119,7 @@ bash relabel_voter_res18_ipc10.sh
 bash relabel_voter_res18_ipc50.sh
 ```
 
-#### 5. Evaluate ####  
+#### 2. Evaluate ####  
 
 > [!IMPORTANT]
 > **Critical Infrastructure Modification: Monkey Patch**
