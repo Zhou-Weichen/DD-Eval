@@ -4,7 +4,7 @@
 
 ---
 
-## 🛠️ Getting Started
+## 🚀 Getting Started
 
 To get started with NCFM, follow the installation instructions below.
 
@@ -95,6 +95,7 @@ torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 -
 | **Tiny-ImageNet** | 1  | ~12.968% | 
 |               | 10 | ~24.327% | 
 |               | 50 | ~26.991% | 
+
 
 
 
