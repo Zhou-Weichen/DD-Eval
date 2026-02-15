@@ -3,7 +3,7 @@
 ### This directory documents the **reproduction results** for the **[CV-DD](https://github.com/Jiacheng8/CV-DD)** method.
 ---
 
-## 🛠️ Getting Started
+## 🚀 Getting Started
 
 To get started with CV-DD, follow the installation instructions below.
 
