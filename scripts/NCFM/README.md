@@ -57,7 +57,9 @@ For validation data, **change the output path** from
 
 ---
 
-####  3. Evaluation #### 
+## 🧪 3. Reproduction & Evaluation
+
+####  1. Evaluation #### 
 
 All commands for running the evaluation are provided in the commands.txt file. 
 For convenience, it is recommended to copy this file into the `NCFM/` directory before execution.
@@ -93,6 +95,7 @@ torchrun --nproc_per_node=2 --nnodes=1 evaluation_script.py --gpu=0,1 --ipc=50 -
 | **Tiny-ImageNet** | 1  | ~12.968% | 
 |               | 10 | ~24.327% | 
 |               | 50 | ~26.991% | 
+
 
 
 
