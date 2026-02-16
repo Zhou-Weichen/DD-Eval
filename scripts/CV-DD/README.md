@@ -172,4 +172,17 @@ bash voter_ipc1_r18.sh
 > To convert the logged accuracy back to the displayed error rate, use: $\text{Error} = 100 - \text{Metric Value}$.
 
 
+---
+## 📊 4. My Reproduction Results
 
+| Dataset | IPC | My Result on ResNet18 (%) | 
+| :--- | :---:| :---: |
+| **CIFAR-10**  | 1  | ~25.42% | 
+|               | 10 | ~46.49% |
+|               | 50 | ~70.39% |
+| **CIFAR-100** | 1  | ~19.69% |
+|               | 10 | ~58.67% |
+|               | 50 | ~% |
+| **Tiny-ImageNet** | 1  | ~12.968% | 
+|               | 10 | ~24.327% | 
+|               | 50 | ~26.991% |
