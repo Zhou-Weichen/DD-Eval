@@ -66,7 +66,7 @@ bash ./train.sh # (Evaluation Phase)
 | **CIFAR-10** | 1   | - | 
 | **CIFAR-10** | 10  | ~54.07% |
 | **CIFAR-10** | 50  | ~80.18% |
-| **CIFAR-100** | 1  | ~% |
+| **CIFAR-100** | 1  | ~12.33% |
 | **CIFAR-100** | 10 | ~50.38% |
 | **CIFAR-100** | 50 | ~% |
 | **Tiny-ImageNet** | 1  | ~%  | 
