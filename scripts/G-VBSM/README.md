@@ -48,6 +48,7 @@ cd recover_Data
 # No need to execute squeeze and recover
 cd ../relabel
 # Adjust the weights and dataset address according to your personal needs.
+# Note the default value for `--pre-train-path`
 bash ./relabel.sh # (Soft Label Generation Phase)
 
 cd ../train
