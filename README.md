@@ -29,24 +29,19 @@ To ensure maximum fidelity to original research while maintaining independent ov
 
 We focus on whether the results are **consistent** with paper claims rather than chasing precise decimals. Minor performance gaps (±1-3%) are expected due to hardware and environmental variance.
 
-| Method | Venue | Verification | Quality | Resources | Data Source |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ | 🟢 | [`scripts/mtt/`](./scripts/MTT/) | [✔️](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors) |
-| **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | ✅ | 🟢 | [`scripts/FreD/`](./scripts/FreD/) |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
-| **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | ✅ | 🟢 | [`scripts/NCFM/`](./scripts/NCFM/) |[✔️](https://huggingface.co/maomaocun/NCFM)|
-| **[CV-DD](https://github.com/jiacheng8/cv-dd)** | arXiv | ✅ | 🟢 | [`scripts/CV-DD/`](./scripts/CV-DD/) |[✔️](https://drive.google.com/drive/folders/1DHFe43l-R0GZR9poAP5YjAFzhaBtUw2a)|
-| **[G_VBSM](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation)** | CVPR '24 | 🕒 | 🟡 | [`scripts/G_VBSM/`] |[✔️](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation?tab=readme-ov-file)|
+| Method | Venue | Verification | Resources | Data Source |
+| :--- | :---: | :---: | :---: | :---: |
+| **[MTT](https://github.com/GeorgeCazenavette/mtt-distillation)** | CVPR '22 | ✅ | [`scripts/mtt/`](./scripts/MTT/) | [✔️](https://georgecazenavette.github.io/mtt-distillation/tensors/index.html#tensors) |
+| **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | ✅ | [`scripts/FreD/`](./scripts/FreD/) |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
+| **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | ✅ | [`scripts/NCFM/`](./scripts/NCFM/) |[✔️](https://huggingface.co/maomaocun/NCFM)|
+| **[CV-DD](https://github.com/jiacheng8/cv-dd)** | arXiv | ✅ |  [`scripts/CV-DD/`](./scripts/CV-DD/) |[✔️](https://drive.google.com/drive/folders/1DHFe43l-R0GZR9poAP5YjAFzhaBtUw2a)|
+| **[G_VBSM](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation)** | CVPR '24 | 🕒 | [`scripts/G_VBSM/`] |[✔️](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation?tab=readme-ov-file)|
 
 
 ***Verification Status***
 > ✅ **Verified**: Independent reproduction verified.  
 > 🕒 **Ongoing**: Currently being decoupled or benchmarked.  
 > 📅 **Backlog**: Planned for future verification.
-
-***Quality Legend:***
-> 🟢 **Consistent**: Results are within a reasonable margin of the reported performance.  
-> 🟡 **Evaluating**: Initial tests running; benchmarks pending.  
-> 🔴 **Significant Gap**: Reproduced results differ substantially from claims.
 
 ---
 
@@ -82,7 +77,7 @@ cd scripts/MTT/
 
 * **Source Integrity**: The validation logic provided in this repository is a **simplified and isolated version** of the code found in the original project repositories. All core algorithmic intellectual property and original implementation rights belong to the respective authors.
 * **Reference Only**: This project is intended for **benchmarking and independent research reference**. Results provided here are community-driven sanity checks and should not be considered official implementation results.
-* **Accuracy & Feedback**: We strive for absolute accuracy. If you identify any errors or believe a **🔴 Significant Gap** status (documented in [`audits/`](./audits/)) results from a misunderstanding of the original method, please **open an issue or [contact us](mailto:zweic008@gmail.com)**. We actively welcome technical clarification to ensure the integrity of this hub.
+* **Accuracy & Feedback**: We strive for absolute accuracy. If you identify any errors or results from a misunderstanding of the original method, please **open an issue or [contact us](mailto:zweic008@gmail.com)**. We actively welcome technical clarification to ensure the integrity of this hub.
 * **The Gold Standard**: For official results, hyperparameter tuning details, or the full distillation pipeline, **always refer to the original author's repository.** Links to official sources are provided in the verification table above.
 
 ---
