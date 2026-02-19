@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/validate/train_fkd.py", line 485, in <module>
+    main()
+  File "/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/validate/train_fkd.py", line 240, in main
+    train_dataset = ImageFolder_FKD_MIX(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/relabel/utils_fkd.py", line 129, in __init__
+    max_epoch, batch_size, num_img = get_FKD_info(self.fkd_path)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/relabel/utils_fkd.py", line 103, in get_FKD_info
+    max_epoch = len(os.listdir(fkd_path))
+                    ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/new_labels/tiny_imagenet/voter_bs16_ipc1'

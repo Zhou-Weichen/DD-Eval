@@ -1,0 +1,13 @@
+Namespace(exp_name='voter_ipc10_ResNet18', original_data_path='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/syn_data/cifar10/voter_ipc10', simple=False, fkd_path='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/new_labels/cifar10/voter_bs16_ipc10', output_dir='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/validate_output/cifar10/voter_ipc10_ResNet18', dataset_name='cifar10', min_scale=0.08, batch_size=16, gradient_accumulation_steps=2, start_epoch=0, epochs=300, workers=2, ipc=10, cos=True, sgd=False, sgd_lr=0.01, momentum=0.5, weight_decay=0.0001, adamw_weight_decay=0.01, model='ResNet18', keep_topk=1000, temperature=20.0, wandb_project='cifar10_ResNet18', wandb_api_key=None, mix_type='cutmix', fkd_seed=42, val_dir='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/test_data/cifar10', mode='fkd_load', mean_norm=[0.4914, 0.4822, 0.4465], std_norm=[0.247, 0.2435, 0.2616], ncls=10, input_size=32, adamw_lr=0.001, eta=1)
+/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/syn_data/cifar10/voter_ipc10
+======= FKD: dataset info ======
+path: /media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/new_labels/cifar10/voter_bs16_ipc10
+num img: 100
+batch size: 16
+max epoch: 300
+================================
+/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/test_data/cifar10
+=> loading student model 'ResNet18'
+
+Epoch: 0
+TRAIN Iter 0: lr = 0.001000,	loss = 0.005287,	Top-1 err = 86.000000,	Top-5 err = 33.000000,	train_time = 2.802424

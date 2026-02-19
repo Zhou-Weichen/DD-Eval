@@ -1,0 +1,941 @@
+Namespace(exp_name='voter_ipc10_ResNet18', original_data_path='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/syn_data/cifar10/voter_ipc10', simple=False, fkd_path='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/new_labels/cifar10/voter_bs16_ipc10', output_dir='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/validate_output/cifar10/voter_ipc10_ResNet18', dataset_name='cifar10', min_scale=0.08, batch_size=16, gradient_accumulation_steps=2, start_epoch=0, epochs=300, workers=2, ipc=10, cos=True, sgd=False, sgd_lr=0.01, momentum=0.5, weight_decay=0.0001, adamw_weight_decay=0.01, model='ResNet18', keep_topk=1000, temperature=20.0, wandb_project='cifar10_ResNet18', wandb_api_key=None, mix_type='cutmix', fkd_seed=42, val_dir='/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/test_data/cifar10', mode='fkd_load', mean_norm=[0.4914, 0.4822, 0.4465], std_norm=[0.247, 0.2435, 0.2616], ncls=10, input_size=32, adamw_lr=0.001, eta=1)
+/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/syn_data/cifar10/voter_ipc10
+======= FKD: dataset info ======
+path: /media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/generated_data/new_labels/cifar10/voter_bs16_ipc10
+num img: 100
+batch size: 16
+max epoch: 300
+================================
+/media/gpu-server-1/4TB_for_data/Zhou/DD/CV-DD/CV_DD_data/test_data/cifar10
+=> loading student model 'ResNet18'
+
+Epoch: 0
+TRAIN Iter 0: lr = 0.001000,	loss = 0.005287,	Top-1 err = 86.000000,	Top-5 err = 33.000000,	train_time = 2.802424
+TEST Iter 0: loss = 4.509332,	Top-1 err = 88.970000,	Top-5 err = 48.120000,	val_time = 17.977286
+
+Epoch: 1
+TRAIN Iter 1: lr = 0.001000,	loss = 0.004312,	Top-1 err = 91.000000,	Top-5 err = 30.000000,	train_time = 2.332020
+
+Epoch: 2
+TRAIN Iter 2: lr = 0.001000,	loss = 0.003475,	Top-1 err = 85.000000,	Top-5 err = 26.000000,	train_time = 2.222082
+
+Epoch: 3
+TRAIN Iter 3: lr = 0.001000,	loss = 0.002976,	Top-1 err = 82.000000,	Top-5 err = 20.000000,	train_time = 2.283616
+
+Epoch: 4
+TRAIN Iter 4: lr = 0.001000,	loss = 0.002682,	Top-1 err = 80.000000,	Top-5 err = 14.000000,	train_time = 2.221569
+
+Epoch: 5
+TRAIN Iter 5: lr = 0.000999,	loss = 0.002435,	Top-1 err = 67.000000,	Top-5 err = 18.000000,	train_time = 2.287590
+
+Epoch: 6
+TRAIN Iter 6: lr = 0.000999,	loss = 0.002428,	Top-1 err = 75.000000,	Top-5 err = 24.000000,	train_time = 2.248461
+
+Epoch: 7
+TRAIN Iter 7: lr = 0.000999,	loss = 0.002406,	Top-1 err = 76.000000,	Top-5 err = 14.000000,	train_time = 2.241476
+
+Epoch: 8
+TRAIN Iter 8: lr = 0.000998,	loss = 0.002554,	Top-1 err = 65.000000,	Top-5 err = 14.000000,	train_time = 2.347337
+
+Epoch: 9
+TRAIN Iter 9: lr = 0.000998,	loss = 0.002477,	Top-1 err = 64.000000,	Top-5 err = 15.000000,	train_time = 2.303353
+
+Epoch: 10
+TRAIN Iter 10: lr = 0.000997,	loss = 0.002533,	Top-1 err = 63.000000,	Top-5 err = 14.000000,	train_time = 2.231002
+TEST Iter 10: loss = 3.304545,	Top-1 err = 81.670000,	Top-5 err = 32.930000,	val_time = 17.975106
+
+Epoch: 11
+TRAIN Iter 11: lr = 0.000997,	loss = 0.002587,	Top-1 err = 63.000000,	Top-5 err = 12.000000,	train_time = 2.317183
+
+Epoch: 12
+TRAIN Iter 12: lr = 0.000996,	loss = 0.002234,	Top-1 err = 68.000000,	Top-5 err = 19.000000,	train_time = 2.226467
+
+Epoch: 13
+TRAIN Iter 13: lr = 0.000995,	loss = 0.002696,	Top-1 err = 64.000000,	Top-5 err = 15.000000,	train_time = 2.275432
+
+Epoch: 14
+TRAIN Iter 14: lr = 0.000995,	loss = 0.001895,	Top-1 err = 63.000000,	Top-5 err = 17.000000,	train_time = 2.200923
+
+Epoch: 15
+TRAIN Iter 15: lr = 0.000994,	loss = 0.002371,	Top-1 err = 62.000000,	Top-5 err = 17.000000,	train_time = 2.279280
+
+Epoch: 16
+TRAIN Iter 16: lr = 0.000993,	loss = 0.002095,	Top-1 err = 70.000000,	Top-5 err = 24.000000,	train_time = 2.294788
+
+Epoch: 17
+TRAIN Iter 17: lr = 0.000992,	loss = 0.002070,	Top-1 err = 62.000000,	Top-5 err = 15.000000,	train_time = 2.262034
+
+Epoch: 18
+TRAIN Iter 18: lr = 0.000991,	loss = 0.002055,	Top-1 err = 56.000000,	Top-5 err = 5.000000,	train_time = 2.360691
+
+Epoch: 19
+TRAIN Iter 19: lr = 0.000990,	loss = 0.001844,	Top-1 err = 61.000000,	Top-5 err = 14.000000,	train_time = 2.250967
+
+Epoch: 20
+TRAIN Iter 20: lr = 0.000989,	loss = 0.002203,	Top-1 err = 59.000000,	Top-5 err = 13.000000,	train_time = 2.245907
+TEST Iter 20: loss = 2.575190,	Top-1 err = 73.020000,	Top-5 err = 20.760000,	val_time = 17.904643
+
+Epoch: 21
+TRAIN Iter 21: lr = 0.000988,	loss = 0.002412,	Top-1 err = 62.000000,	Top-5 err = 12.000000,	train_time = 2.405118
+
+Epoch: 22
+TRAIN Iter 22: lr = 0.000987,	loss = 0.001979,	Top-1 err = 64.000000,	Top-5 err = 15.000000,	train_time = 2.378862
+
+Epoch: 23
+TRAIN Iter 23: lr = 0.000986,	loss = 0.002052,	Top-1 err = 67.000000,	Top-5 err = 20.000000,	train_time = 2.213523
+
+Epoch: 24
+TRAIN Iter 24: lr = 0.000984,	loss = 0.002044,	Top-1 err = 61.000000,	Top-5 err = 11.000000,	train_time = 2.273169
+
+Epoch: 25
+TRAIN Iter 25: lr = 0.000983,	loss = 0.002033,	Top-1 err = 64.000000,	Top-5 err = 12.000000,	train_time = 2.261525
+
+Epoch: 26
+TRAIN Iter 26: lr = 0.000982,	loss = 0.001720,	Top-1 err = 61.000000,	Top-5 err = 15.000000,	train_time = 2.353360
+
+Epoch: 27
+TRAIN Iter 27: lr = 0.000980,	loss = 0.002103,	Top-1 err = 61.000000,	Top-5 err = 18.000000,	train_time = 2.211814
+
+Epoch: 28
+TRAIN Iter 28: lr = 0.000979,	loss = 0.002020,	Top-1 err = 62.000000,	Top-5 err = 18.000000,	train_time = 2.331299
+
+Epoch: 29
+TRAIN Iter 29: lr = 0.000977,	loss = 0.001987,	Top-1 err = 66.000000,	Top-5 err = 15.000000,	train_time = 2.322875
+
+Epoch: 30
+TRAIN Iter 30: lr = 0.000976,	loss = 0.001839,	Top-1 err = 60.000000,	Top-5 err = 13.000000,	train_time = 2.301123
+TEST Iter 30: loss = 2.476961,	Top-1 err = 72.220000,	Top-5 err = 18.880000,	val_time = 18.042621
+
+Epoch: 31
+TRAIN Iter 31: lr = 0.000974,	loss = 0.002190,	Top-1 err = 55.000000,	Top-5 err = 8.000000,	train_time = 2.298082
+
+Epoch: 32
+TRAIN Iter 32: lr = 0.000972,	loss = 0.002111,	Top-1 err = 59.000000,	Top-5 err = 6.000000,	train_time = 2.226122
+
+Epoch: 33
+TRAIN Iter 33: lr = 0.000970,	loss = 0.002156,	Top-1 err = 58.000000,	Top-5 err = 16.000000,	train_time = 2.244761
+
+Epoch: 34
+TRAIN Iter 34: lr = 0.000969,	loss = 0.002019,	Top-1 err = 61.000000,	Top-5 err = 7.000000,	train_time = 2.278549
+
+Epoch: 35
+TRAIN Iter 35: lr = 0.000967,	loss = 0.002022,	Top-1 err = 44.000000,	Top-5 err = 5.000000,	train_time = 2.265847
+
+Epoch: 36
+TRAIN Iter 36: lr = 0.000965,	loss = 0.001738,	Top-1 err = 59.000000,	Top-5 err = 14.000000,	train_time = 2.287946
+
+Epoch: 37
+TRAIN Iter 37: lr = 0.000963,	loss = 0.001909,	Top-1 err = 60.000000,	Top-5 err = 14.000000,	train_time = 2.329090
+
+Epoch: 38
+TRAIN Iter 38: lr = 0.000961,	loss = 0.001900,	Top-1 err = 61.000000,	Top-5 err = 19.000000,	train_time = 2.246333
+
+Epoch: 39
+TRAIN Iter 39: lr = 0.000959,	loss = 0.002184,	Top-1 err = 54.000000,	Top-5 err = 13.000000,	train_time = 2.249984
+
+Epoch: 40
+TRAIN Iter 40: lr = 0.000957,	loss = 0.001950,	Top-1 err = 57.000000,	Top-5 err = 14.000000,	train_time = 2.231825
+TEST Iter 40: loss = 2.697165,	Top-1 err = 72.120000,	Top-5 err = 17.450000,	val_time = 17.884271
+
+Epoch: 41
+TRAIN Iter 41: lr = 0.000955,	loss = 0.001868,	Top-1 err = 67.000000,	Top-5 err = 23.000000,	train_time = 2.295744
+
+Epoch: 42
+TRAIN Iter 42: lr = 0.000952,	loss = 0.001898,	Top-1 err = 48.000000,	Top-5 err = 8.000000,	train_time = 2.255583
+
+Epoch: 43
+TRAIN Iter 43: lr = 0.000950,	loss = 0.001675,	Top-1 err = 56.000000,	Top-5 err = 15.000000,	train_time = 2.355511
+
+Epoch: 44
+TRAIN Iter 44: lr = 0.000948,	loss = 0.001442,	Top-1 err = 54.000000,	Top-5 err = 13.000000,	train_time = 2.245845
+
+Epoch: 45
+TRAIN Iter 45: lr = 0.000946,	loss = 0.001639,	Top-1 err = 58.000000,	Top-5 err = 6.000000,	train_time = 2.263184
+
+Epoch: 46
+TRAIN Iter 46: lr = 0.000943,	loss = 0.001837,	Top-1 err = 57.000000,	Top-5 err = 14.000000,	train_time = 2.316028
+
+Epoch: 47
+TRAIN Iter 47: lr = 0.000941,	loss = 0.001989,	Top-1 err = 60.000000,	Top-5 err = 20.000000,	train_time = 2.233599
+
+Epoch: 48
+TRAIN Iter 48: lr = 0.000938,	loss = 0.001834,	Top-1 err = 54.000000,	Top-5 err = 9.000000,	train_time = 2.280375
+
+Epoch: 49
+TRAIN Iter 49: lr = 0.000936,	loss = 0.001866,	Top-1 err = 67.000000,	Top-5 err = 22.000000,	train_time = 2.225074
+
+Epoch: 50
+TRAIN Iter 50: lr = 0.000933,	loss = 0.001650,	Top-1 err = 69.000000,	Top-5 err = 13.000000,	train_time = 2.267064
+TEST Iter 50: loss = 2.651552,	Top-1 err = 72.090000,	Top-5 err = 18.690000,	val_time = 17.956155
+
+Epoch: 51
+TRAIN Iter 51: lr = 0.000930,	loss = 0.001795,	Top-1 err = 55.000000,	Top-5 err = 7.000000,	train_time = 2.253366
+
+Epoch: 52
+TRAIN Iter 52: lr = 0.000928,	loss = 0.001825,	Top-1 err = 49.000000,	Top-5 err = 9.000000,	train_time = 2.298927
+
+Epoch: 53
+TRAIN Iter 53: lr = 0.000925,	loss = 0.001764,	Top-1 err = 49.000000,	Top-5 err = 12.000000,	train_time = 2.220424
+
+Epoch: 54
+TRAIN Iter 54: lr = 0.000922,	loss = 0.001822,	Top-1 err = 63.000000,	Top-5 err = 20.000000,	train_time = 2.296590
+
+Epoch: 55
+TRAIN Iter 55: lr = 0.000919,	loss = 0.001365,	Top-1 err = 53.000000,	Top-5 err = 15.000000,	train_time = 2.208807
+
+Epoch: 56
+TRAIN Iter 56: lr = 0.000916,	loss = 0.001458,	Top-1 err = 46.000000,	Top-5 err = 6.000000,	train_time = 2.298732
+
+Epoch: 57
+TRAIN Iter 57: lr = 0.000914,	loss = 0.001337,	Top-1 err = 62.000000,	Top-5 err = 8.000000,	train_time = 2.236107
+
+Epoch: 58
+TRAIN Iter 58: lr = 0.000911,	loss = 0.001326,	Top-1 err = 63.000000,	Top-5 err = 11.000000,	train_time = 2.306362
+
+Epoch: 59
+TRAIN Iter 59: lr = 0.000908,	loss = 0.001351,	Top-1 err = 56.000000,	Top-5 err = 15.000000,	train_time = 2.249598
+
+Epoch: 60
+TRAIN Iter 60: lr = 0.000905,	loss = 0.001552,	Top-1 err = 51.000000,	Top-5 err = 13.000000,	train_time = 2.272827
+TEST Iter 60: loss = 2.597371,	Top-1 err = 68.350000,	Top-5 err = 14.570000,	val_time = 17.881857
+
+Epoch: 61
+TRAIN Iter 61: lr = 0.000901,	loss = 0.001524,	Top-1 err = 45.000000,	Top-5 err = 13.000000,	train_time = 2.221747
+
+Epoch: 62
+TRAIN Iter 62: lr = 0.000898,	loss = 0.001553,	Top-1 err = 51.000000,	Top-5 err = 17.000000,	train_time = 2.384929
+
+Epoch: 63
+TRAIN Iter 63: lr = 0.000895,	loss = 0.001584,	Top-1 err = 45.000000,	Top-5 err = 7.000000,	train_time = 2.231725
+
+Epoch: 64
+TRAIN Iter 64: lr = 0.000892,	loss = 0.001728,	Top-1 err = 51.000000,	Top-5 err = 8.000000,	train_time = 2.250355
+
+Epoch: 65
+TRAIN Iter 65: lr = 0.000889,	loss = 0.001612,	Top-1 err = 52.000000,	Top-5 err = 10.000000,	train_time = 2.254128
+
+Epoch: 66
+TRAIN Iter 66: lr = 0.000885,	loss = 0.001583,	Top-1 err = 49.000000,	Top-5 err = 11.000000,	train_time = 2.365548
+
+Epoch: 67
+TRAIN Iter 67: lr = 0.000882,	loss = 0.001705,	Top-1 err = 46.000000,	Top-5 err = 7.000000,	train_time = 2.269758
+
+Epoch: 68
+TRAIN Iter 68: lr = 0.000878,	loss = 0.001515,	Top-1 err = 58.000000,	Top-5 err = 13.000000,	train_time = 2.272630
+
+Epoch: 69
+TRAIN Iter 69: lr = 0.000875,	loss = 0.001435,	Top-1 err = 46.000000,	Top-5 err = 9.000000,	train_time = 2.209610
+
+Epoch: 70
+TRAIN Iter 70: lr = 0.000872,	loss = 0.001476,	Top-1 err = 46.000000,	Top-5 err = 10.000000,	train_time = 2.349377
+TEST Iter 70: loss = 2.447825,	Top-1 err = 67.430000,	Top-5 err = 13.780000,	val_time = 18.013765
+
+Epoch: 71
+TRAIN Iter 71: lr = 0.000868,	loss = 0.001517,	Top-1 err = 47.000000,	Top-5 err = 9.000000,	train_time = 2.315477
+
+Epoch: 72
+TRAIN Iter 72: lr = 0.000864,	loss = 0.001634,	Top-1 err = 50.000000,	Top-5 err = 10.000000,	train_time = 2.304038
+
+Epoch: 73
+TRAIN Iter 73: lr = 0.000861,	loss = 0.001330,	Top-1 err = 61.000000,	Top-5 err = 16.000000,	train_time = 2.246890
+
+Epoch: 74
+TRAIN Iter 74: lr = 0.000857,	loss = 0.001241,	Top-1 err = 52.000000,	Top-5 err = 12.000000,	train_time = 2.226464
+
+Epoch: 75
+TRAIN Iter 75: lr = 0.000854,	loss = 0.001470,	Top-1 err = 45.000000,	Top-5 err = 6.000000,	train_time = 2.369130
+
+Epoch: 76
+TRAIN Iter 76: lr = 0.000850,	loss = 0.001415,	Top-1 err = 48.000000,	Top-5 err = 7.000000,	train_time = 2.304272
+
+Epoch: 77
+TRAIN Iter 77: lr = 0.000846,	loss = 0.001519,	Top-1 err = 52.000000,	Top-5 err = 18.000000,	train_time = 2.217356
+
+Epoch: 78
+TRAIN Iter 78: lr = 0.000842,	loss = 0.001342,	Top-1 err = 58.000000,	Top-5 err = 17.000000,	train_time = 2.371051
+
+Epoch: 79
+TRAIN Iter 79: lr = 0.000838,	loss = 0.001413,	Top-1 err = 47.000000,	Top-5 err = 13.000000,	train_time = 2.304858
+
+Epoch: 80
+TRAIN Iter 80: lr = 0.000835,	loss = 0.001418,	Top-1 err = 48.000000,	Top-5 err = 8.000000,	train_time = 2.317996
+TEST Iter 80: loss = 2.281751,	Top-1 err = 65.220000,	Top-5 err = 12.560000,	val_time = 17.893951
+
+Epoch: 81
+TRAIN Iter 81: lr = 0.000831,	loss = 0.001310,	Top-1 err = 56.000000,	Top-5 err = 11.000000,	train_time = 2.372182
+
+Epoch: 82
+TRAIN Iter 82: lr = 0.000827,	loss = 0.001571,	Top-1 err = 45.000000,	Top-5 err = 11.000000,	train_time = 2.303377
+
+Epoch: 83
+TRAIN Iter 83: lr = 0.000823,	loss = 0.001493,	Top-1 err = 49.000000,	Top-5 err = 13.000000,	train_time = 2.238229
+
+Epoch: 84
+TRAIN Iter 84: lr = 0.000819,	loss = 0.001305,	Top-1 err = 45.000000,	Top-5 err = 9.000000,	train_time = 2.239785
+
+Epoch: 85
+TRAIN Iter 85: lr = 0.000815,	loss = 0.001424,	Top-1 err = 48.000000,	Top-5 err = 7.000000,	train_time = 2.304734
+
+Epoch: 86
+TRAIN Iter 86: lr = 0.000811,	loss = 0.001403,	Top-1 err = 41.000000,	Top-5 err = 6.000000,	train_time = 2.319276
+
+Epoch: 87
+TRAIN Iter 87: lr = 0.000806,	loss = 0.001358,	Top-1 err = 58.000000,	Top-5 err = 12.000000,	train_time = 2.225780
+
+Epoch: 88
+TRAIN Iter 88: lr = 0.000802,	loss = 0.001267,	Top-1 err = 40.000000,	Top-5 err = 5.000000,	train_time = 2.321439
+
+Epoch: 89
+TRAIN Iter 89: lr = 0.000798,	loss = 0.001250,	Top-1 err = 54.000000,	Top-5 err = 14.000000,	train_time = 2.328981
+
+Epoch: 90
+TRAIN Iter 90: lr = 0.000794,	loss = 0.001466,	Top-1 err = 48.000000,	Top-5 err = 16.000000,	train_time = 2.286957
+TEST Iter 90: loss = 2.109688,	Top-1 err = 64.160000,	Top-5 err = 12.570000,	val_time = 17.928165
+
+Epoch: 91
+TRAIN Iter 91: lr = 0.000790,	loss = 0.001425,	Top-1 err = 69.000000,	Top-5 err = 14.000000,	train_time = 2.256821
+
+Epoch: 92
+TRAIN Iter 92: lr = 0.000785,	loss = 0.001357,	Top-1 err = 51.000000,	Top-5 err = 6.000000,	train_time = 2.326861
+
+Epoch: 93
+TRAIN Iter 93: lr = 0.000781,	loss = 0.001477,	Top-1 err = 43.000000,	Top-5 err = 8.000000,	train_time = 2.293510
+
+Epoch: 94
+TRAIN Iter 94: lr = 0.000777,	loss = 0.001392,	Top-1 err = 44.000000,	Top-5 err = 11.000000,	train_time = 2.303036
+
+Epoch: 95
+TRAIN Iter 95: lr = 0.000772,	loss = 0.001260,	Top-1 err = 41.000000,	Top-5 err = 8.000000,	train_time = 2.341729
+
+Epoch: 96
+TRAIN Iter 96: lr = 0.000768,	loss = 0.001407,	Top-1 err = 50.000000,	Top-5 err = 8.000000,	train_time = 2.250437
+
+Epoch: 97
+TRAIN Iter 97: lr = 0.000763,	loss = 0.001250,	Top-1 err = 37.000000,	Top-5 err = 8.000000,	train_time = 2.344832
+
+Epoch: 98
+TRAIN Iter 98: lr = 0.000759,	loss = 0.001105,	Top-1 err = 45.000000,	Top-5 err = 12.000000,	train_time = 2.230935
+
+Epoch: 99
+TRAIN Iter 99: lr = 0.000755,	loss = 0.001199,	Top-1 err = 33.000000,	Top-5 err = 6.000000,	train_time = 2.363585
+
+Epoch: 100
+TRAIN Iter 100: lr = 0.000750,	loss = 0.001324,	Top-1 err = 44.000000,	Top-5 err = 7.000000,	train_time = 2.241180
+TEST Iter 100: loss = 2.376181,	Top-1 err = 65.420000,	Top-5 err = 12.920000,	val_time = 17.856251
+
+Epoch: 101
+TRAIN Iter 101: lr = 0.000745,	loss = 0.001136,	Top-1 err = 52.000000,	Top-5 err = 9.000000,	train_time = 2.306615
+
+Epoch: 102
+TRAIN Iter 102: lr = 0.000741,	loss = 0.001024,	Top-1 err = 40.000000,	Top-5 err = 8.000000,	train_time = 2.298480
+
+Epoch: 103
+TRAIN Iter 103: lr = 0.000736,	loss = 0.001131,	Top-1 err = 38.000000,	Top-5 err = 11.000000,	train_time = 2.398491
+
+Epoch: 104
+TRAIN Iter 104: lr = 0.000732,	loss = 0.001398,	Top-1 err = 45.000000,	Top-5 err = 9.000000,	train_time = 2.286149
+
+Epoch: 105
+TRAIN Iter 105: lr = 0.000727,	loss = 0.001289,	Top-1 err = 44.000000,	Top-5 err = 7.000000,	train_time = 2.370403
+
+Epoch: 106
+TRAIN Iter 106: lr = 0.000722,	loss = 0.001201,	Top-1 err = 54.000000,	Top-5 err = 17.000000,	train_time = 2.287842
+
+Epoch: 107
+TRAIN Iter 107: lr = 0.000718,	loss = 0.001437,	Top-1 err = 52.000000,	Top-5 err = 10.000000,	train_time = 2.249070
+
+Epoch: 108
+TRAIN Iter 108: lr = 0.000713,	loss = 0.001145,	Top-1 err = 41.000000,	Top-5 err = 10.000000,	train_time = 2.263742
+
+Epoch: 109
+TRAIN Iter 109: lr = 0.000708,	loss = 0.001437,	Top-1 err = 49.000000,	Top-5 err = 6.000000,	train_time = 2.221585
+
+Epoch: 110
+TRAIN Iter 110: lr = 0.000703,	loss = 0.001200,	Top-1 err = 61.000000,	Top-5 err = 11.000000,	train_time = 2.272802
+TEST Iter 110: loss = 2.338772,	Top-1 err = 65.560000,	Top-5 err = 13.910000,	val_time = 17.893754
+
+Epoch: 111
+TRAIN Iter 111: lr = 0.000699,	loss = 0.001258,	Top-1 err = 37.000000,	Top-5 err = 5.000000,	train_time = 2.255018
+
+Epoch: 112
+TRAIN Iter 112: lr = 0.000694,	loss = 0.001547,	Top-1 err = 53.000000,	Top-5 err = 15.000000,	train_time = 2.300951
+
+Epoch: 113
+TRAIN Iter 113: lr = 0.000689,	loss = 0.001331,	Top-1 err = 53.000000,	Top-5 err = 10.000000,	train_time = 2.286367
+
+Epoch: 114
+TRAIN Iter 114: lr = 0.000684,	loss = 0.001402,	Top-1 err = 38.000000,	Top-5 err = 13.000000,	train_time = 2.233095
+
+Epoch: 115
+TRAIN Iter 115: lr = 0.000679,	loss = 0.001020,	Top-1 err = 56.000000,	Top-5 err = 14.000000,	train_time = 2.412389
+
+Epoch: 116
+TRAIN Iter 116: lr = 0.000674,	loss = 0.001306,	Top-1 err = 35.000000,	Top-5 err = 2.000000,	train_time = 2.268021
+
+Epoch: 117
+TRAIN Iter 117: lr = 0.000669,	loss = 0.001267,	Top-1 err = 44.000000,	Top-5 err = 12.000000,	train_time = 2.219346
+
+Epoch: 118
+TRAIN Iter 118: lr = 0.000664,	loss = 0.001229,	Top-1 err = 45.000000,	Top-5 err = 8.000000,	train_time = 2.213919
+
+Epoch: 119
+TRAIN Iter 119: lr = 0.000659,	loss = 0.001276,	Top-1 err = 50.000000,	Top-5 err = 16.000000,	train_time = 2.281041
+
+Epoch: 120
+TRAIN Iter 120: lr = 0.000655,	loss = 0.001227,	Top-1 err = 42.000000,	Top-5 err = 10.000000,	train_time = 2.365297
+TEST Iter 120: loss = 2.440926,	Top-1 err = 64.560000,	Top-5 err = 11.370000,	val_time = 17.944283
+
+Epoch: 121
+TRAIN Iter 121: lr = 0.000650,	loss = 0.001265,	Top-1 err = 46.000000,	Top-5 err = 7.000000,	train_time = 2.316185
+
+Epoch: 122
+TRAIN Iter 122: lr = 0.000645,	loss = 0.001171,	Top-1 err = 48.000000,	Top-5 err = 15.000000,	train_time = 2.351359
+
+Epoch: 123
+TRAIN Iter 123: lr = 0.000639,	loss = 0.001066,	Top-1 err = 42.000000,	Top-5 err = 8.000000,	train_time = 2.283170
+
+Epoch: 124
+TRAIN Iter 124: lr = 0.000634,	loss = 0.001285,	Top-1 err = 49.000000,	Top-5 err = 6.000000,	train_time = 2.222908
+
+Epoch: 125
+TRAIN Iter 125: lr = 0.000629,	loss = 0.001182,	Top-1 err = 47.000000,	Top-5 err = 14.000000,	train_time = 2.348803
+
+Epoch: 126
+TRAIN Iter 126: lr = 0.000624,	loss = 0.001167,	Top-1 err = 46.000000,	Top-5 err = 14.000000,	train_time = 2.269928
+
+Epoch: 127
+TRAIN Iter 127: lr = 0.000619,	loss = 0.001284,	Top-1 err = 42.000000,	Top-5 err = 14.000000,	train_time = 2.242042
+
+Epoch: 128
+TRAIN Iter 128: lr = 0.000614,	loss = 0.001214,	Top-1 err = 46.000000,	Top-5 err = 8.000000,	train_time = 2.316037
+
+Epoch: 129
+TRAIN Iter 129: lr = 0.000609,	loss = 0.001239,	Top-1 err = 29.000000,	Top-5 err = 3.000000,	train_time = 2.266255
+
+Epoch: 130
+TRAIN Iter 130: lr = 0.000604,	loss = 0.001083,	Top-1 err = 27.000000,	Top-5 err = 1.000000,	train_time = 2.323397
+TEST Iter 130: loss = 2.216621,	Top-1 err = 62.590000,	Top-5 err = 10.720000,	val_time = 17.984050
+
+Epoch: 131
+TRAIN Iter 131: lr = 0.000599,	loss = 0.001014,	Top-1 err = 38.000000,	Top-5 err = 11.000000,	train_time = 2.288019
+
+Epoch: 132
+TRAIN Iter 132: lr = 0.000594,	loss = 0.001261,	Top-1 err = 42.000000,	Top-5 err = 4.000000,	train_time = 2.240291
+
+Epoch: 133
+TRAIN Iter 133: lr = 0.000589,	loss = 0.001097,	Top-1 err = 39.000000,	Top-5 err = 7.000000,	train_time = 2.373856
+
+Epoch: 134
+TRAIN Iter 134: lr = 0.000583,	loss = 0.001169,	Top-1 err = 53.000000,	Top-5 err = 12.000000,	train_time = 2.236816
+
+Epoch: 135
+TRAIN Iter 135: lr = 0.000578,	loss = 0.001093,	Top-1 err = 39.000000,	Top-5 err = 7.000000,	train_time = 2.419593
+
+Epoch: 136
+TRAIN Iter 136: lr = 0.000573,	loss = 0.001257,	Top-1 err = 46.000000,	Top-5 err = 11.000000,	train_time = 2.223009
+
+Epoch: 137
+TRAIN Iter 137: lr = 0.000568,	loss = 0.000934,	Top-1 err = 50.000000,	Top-5 err = 13.000000,	train_time = 2.245917
+
+Epoch: 138
+TRAIN Iter 138: lr = 0.000563,	loss = 0.001090,	Top-1 err = 53.000000,	Top-5 err = 16.000000,	train_time = 2.357926
+
+Epoch: 139
+TRAIN Iter 139: lr = 0.000557,	loss = 0.001037,	Top-1 err = 28.000000,	Top-5 err = 3.000000,	train_time = 2.331058
+
+Epoch: 140
+TRAIN Iter 140: lr = 0.000552,	loss = 0.001099,	Top-1 err = 52.000000,	Top-5 err = 11.000000,	train_time = 2.341231
+TEST Iter 140: loss = 2.024353,	Top-1 err = 60.180000,	Top-5 err = 10.710000,	val_time = 17.933769
+
+Epoch: 141
+TRAIN Iter 141: lr = 0.000547,	loss = 0.001018,	Top-1 err = 52.000000,	Top-5 err = 12.000000,	train_time = 2.312153
+
+Epoch: 142
+TRAIN Iter 142: lr = 0.000542,	loss = 0.001107,	Top-1 err = 50.000000,	Top-5 err = 14.000000,	train_time = 2.278978
+
+Epoch: 143
+TRAIN Iter 143: lr = 0.000537,	loss = 0.001195,	Top-1 err = 43.000000,	Top-5 err = 11.000000,	train_time = 2.301361
+
+Epoch: 144
+TRAIN Iter 144: lr = 0.000531,	loss = 0.001027,	Top-1 err = 33.000000,	Top-5 err = 4.000000,	train_time = 2.283484
+
+Epoch: 145
+TRAIN Iter 145: lr = 0.000526,	loss = 0.001118,	Top-1 err = 50.000000,	Top-5 err = 17.000000,	train_time = 2.248138
+
+Epoch: 146
+TRAIN Iter 146: lr = 0.000521,	loss = 0.001022,	Top-1 err = 45.000000,	Top-5 err = 18.000000,	train_time = 2.247403
+
+Epoch: 147
+TRAIN Iter 147: lr = 0.000516,	loss = 0.001197,	Top-1 err = 33.000000,	Top-5 err = 7.000000,	train_time = 2.322919
+
+Epoch: 148
+TRAIN Iter 148: lr = 0.000510,	loss = 0.000956,	Top-1 err = 45.000000,	Top-5 err = 13.000000,	train_time = 2.270209
+
+Epoch: 149
+TRAIN Iter 149: lr = 0.000505,	loss = 0.001085,	Top-1 err = 42.000000,	Top-5 err = 8.000000,	train_time = 2.257983
+
+Epoch: 150
+TRAIN Iter 150: lr = 0.000500,	loss = 0.001033,	Top-1 err = 39.000000,	Top-5 err = 7.000000,	train_time = 2.334251
+TEST Iter 150: loss = 2.214975,	Top-1 err = 61.870000,	Top-5 err = 10.390000,	val_time = 17.995733
+
+Epoch: 151
+TRAIN Iter 151: lr = 0.000495,	loss = 0.000998,	Top-1 err = 41.000000,	Top-5 err = 12.000000,	train_time = 2.292401
+
+Epoch: 152
+TRAIN Iter 152: lr = 0.000490,	loss = 0.001052,	Top-1 err = 48.000000,	Top-5 err = 14.000000,	train_time = 2.318659
+
+Epoch: 153
+TRAIN Iter 153: lr = 0.000484,	loss = 0.000942,	Top-1 err = 39.000000,	Top-5 err = 7.000000,	train_time = 2.228438
+
+Epoch: 154
+TRAIN Iter 154: lr = 0.000479,	loss = 0.001068,	Top-1 err = 38.000000,	Top-5 err = 7.000000,	train_time = 2.220258
+
+Epoch: 155
+TRAIN Iter 155: lr = 0.000474,	loss = 0.000956,	Top-1 err = 45.000000,	Top-5 err = 7.000000,	train_time = 2.392118
+
+Epoch: 156
+TRAIN Iter 156: lr = 0.000469,	loss = 0.000953,	Top-1 err = 38.000000,	Top-5 err = 9.000000,	train_time = 2.281287
+
+Epoch: 157
+TRAIN Iter 157: lr = 0.000463,	loss = 0.000965,	Top-1 err = 41.000000,	Top-5 err = 6.000000,	train_time = 2.229901
+
+Epoch: 158
+TRAIN Iter 158: lr = 0.000458,	loss = 0.001089,	Top-1 err = 43.000000,	Top-5 err = 6.000000,	train_time = 2.310335
+
+Epoch: 159
+TRAIN Iter 159: lr = 0.000453,	loss = 0.001117,	Top-1 err = 39.000000,	Top-5 err = 6.000000,	train_time = 2.370510
+
+Epoch: 160
+TRAIN Iter 160: lr = 0.000448,	loss = 0.000850,	Top-1 err = 42.000000,	Top-5 err = 8.000000,	train_time = 2.279743
+TEST Iter 160: loss = 2.173018,	Top-1 err = 62.210000,	Top-5 err = 10.140000,	val_time = 17.952157
+
+Epoch: 161
+TRAIN Iter 161: lr = 0.000443,	loss = 0.001030,	Top-1 err = 52.000000,	Top-5 err = 16.000000,	train_time = 2.270917
+
+Epoch: 162
+TRAIN Iter 162: lr = 0.000437,	loss = 0.001024,	Top-1 err = 38.000000,	Top-5 err = 11.000000,	train_time = 2.249645
+
+Epoch: 163
+TRAIN Iter 163: lr = 0.000432,	loss = 0.001188,	Top-1 err = 29.000000,	Top-5 err = 3.000000,	train_time = 2.227766
+
+Epoch: 164
+TRAIN Iter 164: lr = 0.000427,	loss = 0.000885,	Top-1 err = 30.000000,	Top-5 err = 4.000000,	train_time = 2.382270
+
+Epoch: 165
+TRAIN Iter 165: lr = 0.000422,	loss = 0.000894,	Top-1 err = 35.000000,	Top-5 err = 6.000000,	train_time = 2.257776
+
+Epoch: 166
+TRAIN Iter 166: lr = 0.000417,	loss = 0.000814,	Top-1 err = 44.000000,	Top-5 err = 10.000000,	train_time = 2.308437
+
+Epoch: 167
+TRAIN Iter 167: lr = 0.000411,	loss = 0.000941,	Top-1 err = 35.000000,	Top-5 err = 5.000000,	train_time = 2.374852
+
+Epoch: 168
+TRAIN Iter 168: lr = 0.000406,	loss = 0.000978,	Top-1 err = 46.000000,	Top-5 err = 5.000000,	train_time = 2.269704
+
+Epoch: 169
+TRAIN Iter 169: lr = 0.000401,	loss = 0.000972,	Top-1 err = 45.000000,	Top-5 err = 13.000000,	train_time = 2.226265
+
+Epoch: 170
+TRAIN Iter 170: lr = 0.000396,	loss = 0.000940,	Top-1 err = 53.000000,	Top-5 err = 10.000000,	train_time = 2.266389
+TEST Iter 170: loss = 1.875644,	Top-1 err = 58.540000,	Top-5 err = 8.710000,	val_time = 17.992237
+
+Epoch: 171
+TRAIN Iter 171: lr = 0.000391,	loss = 0.001045,	Top-1 err = 47.000000,	Top-5 err = 12.000000,	train_time = 2.337704
+
+Epoch: 172
+TRAIN Iter 172: lr = 0.000386,	loss = 0.001139,	Top-1 err = 54.000000,	Top-5 err = 16.000000,	train_time = 2.308138
+
+Epoch: 173
+TRAIN Iter 173: lr = 0.000381,	loss = 0.001068,	Top-1 err = 39.000000,	Top-5 err = 9.000000,	train_time = 2.334107
+
+Epoch: 174
+TRAIN Iter 174: lr = 0.000376,	loss = 0.000976,	Top-1 err = 45.000000,	Top-5 err = 14.000000,	train_time = 2.220387
+
+Epoch: 175
+TRAIN Iter 175: lr = 0.000371,	loss = 0.000907,	Top-1 err = 58.000000,	Top-5 err = 28.000000,	train_time = 2.285842
+
+Epoch: 176
+TRAIN Iter 176: lr = 0.000366,	loss = 0.000932,	Top-1 err = 25.000000,	Top-5 err = 4.000000,	train_time = 2.448028
+
+Epoch: 177
+TRAIN Iter 177: lr = 0.000361,	loss = 0.000905,	Top-1 err = 38.000000,	Top-5 err = 9.000000,	train_time = 2.349494
+
+Epoch: 178
+TRAIN Iter 178: lr = 0.000355,	loss = 0.000989,	Top-1 err = 35.000000,	Top-5 err = 8.000000,	train_time = 2.290061
+
+Epoch: 179
+TRAIN Iter 179: lr = 0.000350,	loss = 0.000883,	Top-1 err = 35.000000,	Top-5 err = 5.000000,	train_time = 2.254799
+
+Epoch: 180
+TRAIN Iter 180: lr = 0.000345,	loss = 0.001028,	Top-1 err = 38.000000,	Top-5 err = 7.000000,	train_time = 2.251437
+TEST Iter 180: loss = 2.179574,	Top-1 err = 59.240000,	Top-5 err = 10.000000,	val_time = 17.888438
+
+Epoch: 181
+TRAIN Iter 181: lr = 0.000341,	loss = 0.000919,	Top-1 err = 46.000000,	Top-5 err = 14.000000,	train_time = 2.399986
+
+Epoch: 182
+TRAIN Iter 182: lr = 0.000336,	loss = 0.000870,	Top-1 err = 45.000000,	Top-5 err = 10.000000,	train_time = 2.267404
+
+Epoch: 183
+TRAIN Iter 183: lr = 0.000331,	loss = 0.000977,	Top-1 err = 50.000000,	Top-5 err = 9.000000,	train_time = 2.239831
+
+Epoch: 184
+TRAIN Iter 184: lr = 0.000326,	loss = 0.000975,	Top-1 err = 52.000000,	Top-5 err = 13.000000,	train_time = 2.329420
+
+Epoch: 185
+TRAIN Iter 185: lr = 0.000321,	loss = 0.000886,	Top-1 err = 47.000000,	Top-5 err = 15.000000,	train_time = 2.302385
+
+Epoch: 186
+TRAIN Iter 186: lr = 0.000316,	loss = 0.001035,	Top-1 err = 33.000000,	Top-5 err = 7.000000,	train_time = 2.275479
+
+Epoch: 187
+TRAIN Iter 187: lr = 0.000311,	loss = 0.001117,	Top-1 err = 41.000000,	Top-5 err = 7.000000,	train_time = 2.300305
+
+Epoch: 188
+TRAIN Iter 188: lr = 0.000306,	loss = 0.000766,	Top-1 err = 47.000000,	Top-5 err = 11.000000,	train_time = 2.334051
+
+Epoch: 189
+TRAIN Iter 189: lr = 0.000301,	loss = 0.001003,	Top-1 err = 36.000000,	Top-5 err = 13.000000,	train_time = 2.261353
+
+Epoch: 190
+TRAIN Iter 190: lr = 0.000297,	loss = 0.000903,	Top-1 err = 42.000000,	Top-5 err = 4.000000,	train_time = 2.360976
+TEST Iter 190: loss = 1.970722,	Top-1 err = 58.590000,	Top-5 err = 9.100000,	val_time = 18.026656
+
+Epoch: 191
+TRAIN Iter 191: lr = 0.000292,	loss = 0.001011,	Top-1 err = 39.000000,	Top-5 err = 9.000000,	train_time = 2.288623
+
+Epoch: 192
+TRAIN Iter 192: lr = 0.000287,	loss = 0.000804,	Top-1 err = 50.000000,	Top-5 err = 10.000000,	train_time = 2.366170
+
+Epoch: 193
+TRAIN Iter 193: lr = 0.000282,	loss = 0.000847,	Top-1 err = 38.000000,	Top-5 err = 7.000000,	train_time = 2.306209
+
+Epoch: 194
+TRAIN Iter 194: lr = 0.000278,	loss = 0.000875,	Top-1 err = 40.000000,	Top-5 err = 12.000000,	train_time = 2.394392
+
+Epoch: 195
+TRAIN Iter 195: lr = 0.000273,	loss = 0.000947,	Top-1 err = 63.000000,	Top-5 err = 23.000000,	train_time = 2.298657
+
+Epoch: 196
+TRAIN Iter 196: lr = 0.000268,	loss = 0.000772,	Top-1 err = 32.000000,	Top-5 err = 5.000000,	train_time = 2.336242
+
+Epoch: 197
+TRAIN Iter 197: lr = 0.000264,	loss = 0.000772,	Top-1 err = 37.000000,	Top-5 err = 3.000000,	train_time = 2.348787
+
+Epoch: 198
+TRAIN Iter 198: lr = 0.000259,	loss = 0.000885,	Top-1 err = 32.000000,	Top-5 err = 10.000000,	train_time = 2.215750
+
+Epoch: 199
+TRAIN Iter 199: lr = 0.000255,	loss = 0.000876,	Top-1 err = 43.000000,	Top-5 err = 20.000000,	train_time = 2.327028
+
+Epoch: 200
+TRAIN Iter 200: lr = 0.000250,	loss = 0.000944,	Top-1 err = 41.000000,	Top-5 err = 8.000000,	train_time = 2.234246
+TEST Iter 200: loss = 2.048090,	Top-1 err = 57.980000,	Top-5 err = 8.550000,	val_time = 17.878637
+
+Epoch: 201
+TRAIN Iter 201: lr = 0.000245,	loss = 0.000912,	Top-1 err = 34.000000,	Top-5 err = 6.000000,	train_time = 2.274247
+
+Epoch: 202
+TRAIN Iter 202: lr = 0.000241,	loss = 0.000785,	Top-1 err = 50.000000,	Top-5 err = 15.000000,	train_time = 2.362167
+
+Epoch: 203
+TRAIN Iter 203: lr = 0.000237,	loss = 0.000866,	Top-1 err = 35.000000,	Top-5 err = 6.000000,	train_time = 2.226958
+
+Epoch: 204
+TRAIN Iter 204: lr = 0.000232,	loss = 0.000874,	Top-1 err = 40.000000,	Top-5 err = 6.000000,	train_time = 2.316611
+
+Epoch: 205
+TRAIN Iter 205: lr = 0.000228,	loss = 0.000910,	Top-1 err = 54.000000,	Top-5 err = 14.000000,	train_time = 2.220470
+
+Epoch: 206
+TRAIN Iter 206: lr = 0.000223,	loss = 0.001006,	Top-1 err = 38.000000,	Top-5 err = 8.000000,	train_time = 2.228128
+
+Epoch: 207
+TRAIN Iter 207: lr = 0.000219,	loss = 0.000738,	Top-1 err = 51.000000,	Top-5 err = 18.000000,	train_time = 2.338766
+
+Epoch: 208
+TRAIN Iter 208: lr = 0.000215,	loss = 0.000752,	Top-1 err = 35.000000,	Top-5 err = 13.000000,	train_time = 2.325863
+
+Epoch: 209
+TRAIN Iter 209: lr = 0.000210,	loss = 0.000824,	Top-1 err = 40.000000,	Top-5 err = 9.000000,	train_time = 2.306811
+
+Epoch: 210
+TRAIN Iter 210: lr = 0.000206,	loss = 0.000769,	Top-1 err = 33.000000,	Top-5 err = 7.000000,	train_time = 2.267027
+TEST Iter 210: loss = 1.876304,	Top-1 err = 55.240000,	Top-5 err = 8.670000,	val_time = 17.901066
+
+Epoch: 211
+TRAIN Iter 211: lr = 0.000202,	loss = 0.000867,	Top-1 err = 33.000000,	Top-5 err = 7.000000,	train_time = 2.271890
+
+Epoch: 212
+TRAIN Iter 212: lr = 0.000198,	loss = 0.000834,	Top-1 err = 41.000000,	Top-5 err = 15.000000,	train_time = 2.247456
+
+Epoch: 213
+TRAIN Iter 213: lr = 0.000194,	loss = 0.000883,	Top-1 err = 32.000000,	Top-5 err = 4.000000,	train_time = 2.263301
+
+Epoch: 214
+TRAIN Iter 214: lr = 0.000189,	loss = 0.000910,	Top-1 err = 41.000000,	Top-5 err = 11.000000,	train_time = 2.302856
+
+Epoch: 215
+TRAIN Iter 215: lr = 0.000185,	loss = 0.000933,	Top-1 err = 42.000000,	Top-5 err = 12.000000,	train_time = 2.420696
+
+Epoch: 216
+TRAIN Iter 216: lr = 0.000181,	loss = 0.000869,	Top-1 err = 36.000000,	Top-5 err = 3.000000,	train_time = 2.211784
+
+Epoch: 217
+TRAIN Iter 217: lr = 0.000177,	loss = 0.000896,	Top-1 err = 31.000000,	Top-5 err = 4.000000,	train_time = 2.285391
+
+Epoch: 218
+TRAIN Iter 218: lr = 0.000173,	loss = 0.000919,	Top-1 err = 38.000000,	Top-5 err = 5.000000,	train_time = 2.357610
+
+Epoch: 219
+TRAIN Iter 219: lr = 0.000169,	loss = 0.000739,	Top-1 err = 40.000000,	Top-5 err = 13.000000,	train_time = 2.269492
+
+Epoch: 220
+TRAIN Iter 220: lr = 0.000165,	loss = 0.000775,	Top-1 err = 31.000000,	Top-5 err = 3.000000,	train_time = 2.214399
+TEST Iter 220: loss = 1.970192,	Top-1 err = 56.580000,	Top-5 err = 9.200000,	val_time = 17.888084
+
+Epoch: 221
+TRAIN Iter 221: lr = 0.000162,	loss = 0.000807,	Top-1 err = 39.000000,	Top-5 err = 11.000000,	train_time = 2.265250
+
+Epoch: 222
+TRAIN Iter 222: lr = 0.000158,	loss = 0.000902,	Top-1 err = 30.000000,	Top-5 err = 4.000000,	train_time = 2.285064
+
+Epoch: 223
+TRAIN Iter 223: lr = 0.000154,	loss = 0.000769,	Top-1 err = 45.000000,	Top-5 err = 15.000000,	train_time = 2.225168
+
+Epoch: 224
+TRAIN Iter 224: lr = 0.000150,	loss = 0.000829,	Top-1 err = 32.000000,	Top-5 err = 6.000000,	train_time = 2.298048
+
+Epoch: 225
+TRAIN Iter 225: lr = 0.000146,	loss = 0.000790,	Top-1 err = 36.000000,	Top-5 err = 6.000000,	train_time = 2.259444
+
+Epoch: 226
+TRAIN Iter 226: lr = 0.000143,	loss = 0.000719,	Top-1 err = 33.000000,	Top-5 err = 4.000000,	train_time = 2.205454
+
+Epoch: 227
+TRAIN Iter 227: lr = 0.000139,	loss = 0.000870,	Top-1 err = 57.000000,	Top-5 err = 22.000000,	train_time = 2.335867
+
+Epoch: 228
+TRAIN Iter 228: lr = 0.000136,	loss = 0.000751,	Top-1 err = 41.000000,	Top-5 err = 7.000000,	train_time = 2.358245
+
+Epoch: 229
+TRAIN Iter 229: lr = 0.000132,	loss = 0.000840,	Top-1 err = 33.000000,	Top-5 err = 6.000000,	train_time = 2.243221
+
+Epoch: 230
+TRAIN Iter 230: lr = 0.000128,	loss = 0.000650,	Top-1 err = 27.000000,	Top-5 err = 3.000000,	train_time = 2.244331
+TEST Iter 230: loss = 1.826726,	Top-1 err = 56.210000,	Top-5 err = 8.230000,	val_time = 18.000735
+
+Epoch: 231
+TRAIN Iter 231: lr = 0.000125,	loss = 0.000908,	Top-1 err = 31.000000,	Top-5 err = 7.000000,	train_time = 2.281616
+
+Epoch: 232
+TRAIN Iter 232: lr = 0.000122,	loss = 0.000725,	Top-1 err = 38.000000,	Top-5 err = 11.000000,	train_time = 2.357131
+
+Epoch: 233
+TRAIN Iter 233: lr = 0.000118,	loss = 0.000883,	Top-1 err = 32.000000,	Top-5 err = 6.000000,	train_time = 2.353520
+
+Epoch: 234
+TRAIN Iter 234: lr = 0.000115,	loss = 0.000681,	Top-1 err = 65.000000,	Top-5 err = 15.000000,	train_time = 2.285182
+
+Epoch: 235
+TRAIN Iter 235: lr = 0.000111,	loss = 0.000726,	Top-1 err = 41.000000,	Top-5 err = 11.000000,	train_time = 2.264056
+
+Epoch: 236
+TRAIN Iter 236: lr = 0.000108,	loss = 0.000712,	Top-1 err = 31.000000,	Top-5 err = 1.000000,	train_time = 2.333325
+
+Epoch: 237
+TRAIN Iter 237: lr = 0.000105,	loss = 0.000736,	Top-1 err = 52.000000,	Top-5 err = 13.000000,	train_time = 2.259222
+
+Epoch: 238
+TRAIN Iter 238: lr = 0.000102,	loss = 0.000684,	Top-1 err = 33.000000,	Top-5 err = 8.000000,	train_time = 2.311991
+
+Epoch: 239
+TRAIN Iter 239: lr = 0.000099,	loss = 0.000779,	Top-1 err = 32.000000,	Top-5 err = 6.000000,	train_time = 2.347280
+
+Epoch: 240
+TRAIN Iter 240: lr = 0.000095,	loss = 0.000766,	Top-1 err = 43.000000,	Top-5 err = 4.000000,	train_time = 2.259599
+TEST Iter 240: loss = 1.815441,	Top-1 err = 54.680000,	Top-5 err = 7.960000,	val_time = 17.948003
+
+Epoch: 241
+TRAIN Iter 241: lr = 0.000092,	loss = 0.000724,	Top-1 err = 39.000000,	Top-5 err = 12.000000,	train_time = 2.229917
+
+Epoch: 242
+TRAIN Iter 242: lr = 0.000089,	loss = 0.000804,	Top-1 err = 61.000000,	Top-5 err = 18.000000,	train_time = 2.288301
+
+Epoch: 243
+TRAIN Iter 243: lr = 0.000086,	loss = 0.000772,	Top-1 err = 42.000000,	Top-5 err = 7.000000,	train_time = 2.337516
+
+Epoch: 244
+TRAIN Iter 244: lr = 0.000084,	loss = 0.000704,	Top-1 err = 29.000000,	Top-5 err = 4.000000,	train_time = 2.295578
+
+Epoch: 245
+TRAIN Iter 245: lr = 0.000081,	loss = 0.000742,	Top-1 err = 34.000000,	Top-5 err = 10.000000,	train_time = 2.263646
+
+Epoch: 246
+TRAIN Iter 246: lr = 0.000078,	loss = 0.000773,	Top-1 err = 47.000000,	Top-5 err = 13.000000,	train_time = 2.228830
+
+Epoch: 247
+TRAIN Iter 247: lr = 0.000075,	loss = 0.000691,	Top-1 err = 38.000000,	Top-5 err = 6.000000,	train_time = 2.218967
+
+Epoch: 248
+TRAIN Iter 248: lr = 0.000072,	loss = 0.000823,	Top-1 err = 22.000000,	Top-5 err = 3.000000,	train_time = 2.224317
+
+Epoch: 249
+TRAIN Iter 249: lr = 0.000070,	loss = 0.000692,	Top-1 err = 26.000000,	Top-5 err = 3.000000,	train_time = 2.310120
+
+Epoch: 250
+TRAIN Iter 250: lr = 0.000067,	loss = 0.000718,	Top-1 err = 38.000000,	Top-5 err = 13.000000,	train_time = 2.335502
+TEST Iter 250: loss = 1.785391,	Top-1 err = 53.890000,	Top-5 err = 7.640000,	val_time = 17.924211
+
+Epoch: 251
+TRAIN Iter 251: lr = 0.000064,	loss = 0.000622,	Top-1 err = 32.000000,	Top-5 err = 4.000000,	train_time = 2.268873
+
+Epoch: 252
+TRAIN Iter 252: lr = 0.000062,	loss = 0.000655,	Top-1 err = 24.000000,	Top-5 err = 3.000000,	train_time = 2.258327
+
+Epoch: 253
+TRAIN Iter 253: lr = 0.000059,	loss = 0.000700,	Top-1 err = 40.000000,	Top-5 err = 6.000000,	train_time = 2.367252
+
+Epoch: 254
+TRAIN Iter 254: lr = 0.000057,	loss = 0.000767,	Top-1 err = 51.000000,	Top-5 err = 12.000000,	train_time = 2.219042
+
+Epoch: 255
+TRAIN Iter 255: lr = 0.000054,	loss = 0.000817,	Top-1 err = 60.000000,	Top-5 err = 22.000000,	train_time = 2.332962
+
+Epoch: 256
+TRAIN Iter 256: lr = 0.000052,	loss = 0.000759,	Top-1 err = 38.000000,	Top-5 err = 8.000000,	train_time = 2.223489
+
+Epoch: 257
+TRAIN Iter 257: lr = 0.000050,	loss = 0.000678,	Top-1 err = 24.000000,	Top-5 err = 3.000000,	train_time = 2.374898
+
+Epoch: 258
+TRAIN Iter 258: lr = 0.000048,	loss = 0.000733,	Top-1 err = 44.000000,	Top-5 err = 17.000000,	train_time = 2.223404
+
+Epoch: 259
+TRAIN Iter 259: lr = 0.000045,	loss = 0.000836,	Top-1 err = 60.000000,	Top-5 err = 18.000000,	train_time = 2.279643
+
+Epoch: 260
+TRAIN Iter 260: lr = 0.000043,	loss = 0.000625,	Top-1 err = 24.000000,	Top-5 err = 3.000000,	train_time = 2.356953
+TEST Iter 260: loss = 1.768990,	Top-1 err = 54.080000,	Top-5 err = 7.380000,	val_time = 17.949699
+
+Epoch: 261
+TRAIN Iter 261: lr = 0.000041,	loss = 0.000786,	Top-1 err = 30.000000,	Top-5 err = 6.000000,	train_time = 2.253024
+
+Epoch: 262
+TRAIN Iter 262: lr = 0.000039,	loss = 0.000733,	Top-1 err = 32.000000,	Top-5 err = 2.000000,	train_time = 2.255552
+
+Epoch: 263
+TRAIN Iter 263: lr = 0.000037,	loss = 0.000665,	Top-1 err = 58.000000,	Top-5 err = 12.000000,	train_time = 2.287768
+
+Epoch: 264
+TRAIN Iter 264: lr = 0.000035,	loss = 0.000708,	Top-1 err = 41.000000,	Top-5 err = 18.000000,	train_time = 2.255663
+
+Epoch: 265
+TRAIN Iter 265: lr = 0.000033,	loss = 0.000710,	Top-1 err = 34.000000,	Top-5 err = 3.000000,	train_time = 2.252972
+
+Epoch: 266
+TRAIN Iter 266: lr = 0.000031,	loss = 0.000627,	Top-1 err = 42.000000,	Top-5 err = 10.000000,	train_time = 2.248891
+
+Epoch: 267
+TRAIN Iter 267: lr = 0.000030,	loss = 0.000731,	Top-1 err = 34.000000,	Top-5 err = 13.000000,	train_time = 2.372322
+
+Epoch: 268
+TRAIN Iter 268: lr = 0.000028,	loss = 0.000709,	Top-1 err = 29.000000,	Top-5 err = 3.000000,	train_time = 2.331858
+
+Epoch: 269
+TRAIN Iter 269: lr = 0.000026,	loss = 0.000793,	Top-1 err = 48.000000,	Top-5 err = 16.000000,	train_time = 2.314912
+
+Epoch: 270
+TRAIN Iter 270: lr = 0.000024,	loss = 0.000688,	Top-1 err = 28.000000,	Top-5 err = 6.000000,	train_time = 2.253298
+TEST Iter 270: loss = 1.806440,	Top-1 err = 55.360000,	Top-5 err = 7.740000,	val_time = 17.915935
+
+Epoch: 271
+TRAIN Iter 271: lr = 0.000023,	loss = 0.000700,	Top-1 err = 34.000000,	Top-5 err = 8.000000,	train_time = 2.330097
+
+Epoch: 272
+TRAIN Iter 272: lr = 0.000021,	loss = 0.000666,	Top-1 err = 45.000000,	Top-5 err = 9.000000,	train_time = 2.301008
+
+Epoch: 273
+TRAIN Iter 273: lr = 0.000020,	loss = 0.000793,	Top-1 err = 33.000000,	Top-5 err = 6.000000,	train_time = 2.232235
+
+Epoch: 274
+TRAIN Iter 274: lr = 0.000018,	loss = 0.000741,	Top-1 err = 47.000000,	Top-5 err = 16.000000,	train_time = 2.293773
+
+Epoch: 275
+TRAIN Iter 275: lr = 0.000017,	loss = 0.000775,	Top-1 err = 32.000000,	Top-5 err = 4.000000,	train_time = 2.277150
+
+Epoch: 276
+TRAIN Iter 276: lr = 0.000016,	loss = 0.000614,	Top-1 err = 36.000000,	Top-5 err = 8.000000,	train_time = 2.347308
+
+Epoch: 277
+TRAIN Iter 277: lr = 0.000014,	loss = 0.000718,	Top-1 err = 35.000000,	Top-5 err = 5.000000,	train_time = 2.229587
+
+Epoch: 278
+TRAIN Iter 278: lr = 0.000013,	loss = 0.000680,	Top-1 err = 29.000000,	Top-5 err = 6.000000,	train_time = 2.280500
+
+Epoch: 279
+TRAIN Iter 279: lr = 0.000012,	loss = 0.000682,	Top-1 err = 34.000000,	Top-5 err = 8.000000,	train_time = 2.276477
+
+Epoch: 280
+TRAIN Iter 280: lr = 0.000011,	loss = 0.000701,	Top-1 err = 44.000000,	Top-5 err = 9.000000,	train_time = 2.242330
+TEST Iter 280: loss = 1.768280,	Top-1 err = 53.790000,	Top-5 err = 7.350000,	val_time = 17.897425
+
+Epoch: 281
+TRAIN Iter 281: lr = 0.000010,	loss = 0.000700,	Top-1 err = 37.000000,	Top-5 err = 10.000000,	train_time = 2.294137
+
+Epoch: 282
+TRAIN Iter 282: lr = 0.000009,	loss = 0.000637,	Top-1 err = 36.000000,	Top-5 err = 4.000000,	train_time = 2.254889
+
+Epoch: 283
+TRAIN Iter 283: lr = 0.000008,	loss = 0.000639,	Top-1 err = 37.000000,	Top-5 err = 10.000000,	train_time = 2.364747
+
+Epoch: 284
+TRAIN Iter 284: lr = 0.000007,	loss = 0.000628,	Top-1 err = 32.000000,	Top-5 err = 6.000000,	train_time = 2.342888
+
+Epoch: 285
+TRAIN Iter 285: lr = 0.000006,	loss = 0.000687,	Top-1 err = 27.000000,	Top-5 err = 5.000000,	train_time = 2.270266
+
+Epoch: 286
+TRAIN Iter 286: lr = 0.000005,	loss = 0.000553,	Top-1 err = 19.000000,	Top-5 err = 3.000000,	train_time = 2.299587
+
+Epoch: 287
+TRAIN Iter 287: lr = 0.000005,	loss = 0.000668,	Top-1 err = 42.000000,	Top-5 err = 14.000000,	train_time = 2.221531
+
+Epoch: 288
+TRAIN Iter 288: lr = 0.000004,	loss = 0.000647,	Top-1 err = 26.000000,	Top-5 err = 5.000000,	train_time = 2.346944
+
+Epoch: 289
+TRAIN Iter 289: lr = 0.000003,	loss = 0.000643,	Top-1 err = 48.000000,	Top-5 err = 13.000000,	train_time = 2.260211
+
+Epoch: 290
+TRAIN Iter 290: lr = 0.000003,	loss = 0.000676,	Top-1 err = 36.000000,	Top-5 err = 9.000000,	train_time = 2.279992
+TEST Iter 290: loss = 1.742282,	Top-1 err = 54.350000,	Top-5 err = 7.360000,	val_time = 17.980400
+
+Epoch: 291
+TRAIN Iter 291: lr = 0.000002,	loss = 0.000708,	Top-1 err = 31.000000,	Top-5 err = 3.000000,	train_time = 2.332908
+
+Epoch: 292
+TRAIN Iter 292: lr = 0.000002,	loss = 0.000684,	Top-1 err = 34.000000,	Top-5 err = 8.000000,	train_time = 2.286178
+
+Epoch: 293
+TRAIN Iter 293: lr = 0.000001,	loss = 0.000782,	Top-1 err = 28.000000,	Top-5 err = 1.000000,	train_time = 2.270823
+
+Epoch: 294
+TRAIN Iter 294: lr = 0.000001,	loss = 0.000713,	Top-1 err = 39.000000,	Top-5 err = 9.000000,	train_time = 2.296675
+
+Epoch: 295
+TRAIN Iter 295: lr = 0.000001,	loss = 0.000738,	Top-1 err = 33.000000,	Top-5 err = 5.000000,	train_time = 2.392849
+
+Epoch: 296
+TRAIN Iter 296: lr = 0.000000,	loss = 0.000822,	Top-1 err = 35.000000,	Top-5 err = 8.000000,	train_time = 2.315783
+
+Epoch: 297
+TRAIN Iter 297: lr = 0.000000,	loss = 0.000732,	Top-1 err = 31.000000,	Top-5 err = 4.000000,	train_time = 2.303988
+
+Epoch: 298
+TRAIN Iter 298: lr = 0.000000,	loss = 0.000858,	Top-1 err = 35.000000,	Top-5 err = 11.000000,	train_time = 2.241032
+
+Epoch: 299
+TRAIN Iter 299: lr = 0.000000,	loss = 0.000654,	Top-1 err = 46.000000,	Top-5 err = 13.000000,	train_time = 2.236316
+TEST Iter 299: loss = 1.762922,	Top-1 err = 53.510000,	Top-5 err = 7.330000,	val_time = 17.870222
