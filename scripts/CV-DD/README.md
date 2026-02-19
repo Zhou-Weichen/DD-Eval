@@ -127,7 +127,7 @@ bash relabel_voter_res18_ipc50.sh
 > To support the custom batch loading logic (FKD), you **must** apply a Monkey Patch to the PyTorch data utility in `train_fkd.py`. 
 >
 > * **Location:** This block MUST be pasted **before** `def get_args():` at the top level of the script to ensure the patch is active before the DataLoader is initialized.
-
+> * We have already added the monkey patch to our script.
 ```python
 ### Monkey Patch 
 import torch.utils.data._utils.fetch as torch_fetch
