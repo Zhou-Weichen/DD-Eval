@@ -1,0 +1,1 @@
+TRAIN Iter 999: lr = 0.000000,	loss = 0.825929,	Top-1 err = 49.400000,	Top-5 err = 15.400000,	train_time = 5.001390
