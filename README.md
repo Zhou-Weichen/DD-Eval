@@ -35,9 +35,8 @@ We focus on whether the results are **consistent** with paper claims rather than
 | **[FreD](https://github.com/sdh0818/FreD)** | NIPS '23 | ✅ | [`scripts/FreD/`](./scripts/FreD/) |[✔️](https://drive.google.com/drive/folders/1r1OMVv9llejGmpHfK5DpW4m57Dz_SZ2n)|
 | **[NCFM](https://github.com/gszfwsb/NCFM)** | CVPR '25 | ✅ | [`scripts/NCFM/`](./scripts/NCFM/) |[✔️](https://huggingface.co/maomaocun/NCFM)|
 | **[CV-DD](https://github.com/jiacheng8/cv-dd)** | arXiv | ✅ |  [`scripts/CV-DD/`](./scripts/CV-DD/) |[✔️](https://drive.google.com/drive/folders/1DHFe43l-R0GZR9poAP5YjAFzhaBtUw2a)|
-| **[G_VBSM](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation)** | CVPR '24 | 🕒 | [`scripts/G_VBSM/`](./scripts/G_VBSM/) |[✔️](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation?tab=readme-ov-file)|
-| **[SCDD](https://github.com/VILA-Lab/SRe2L/tree/main/SCDD)** | arXiv | 🕒 | [`scripts/SCDD/`](./scripts/SCDD/) |[❌]|
-| **[SRe2L](https://github.com/VILA-Lab/SRe2L/tree/main/SRe2L)** | NIPS '23 | 🕒 | [`scripts/SRe2L/`](./scripts/SRe2L/) |[❌]|
+| **[G_VBSM](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation)** | CVPR '24 | 🕒 | [`scripts/G_VBSM/`](./scripts/G-VBSM/) |[✔️](https://github.com/shaoshitong/G_VBSM_Dataset_Condensation?tab=readme-ov-file)|
+
 
 
 
